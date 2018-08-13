@@ -54,14 +54,19 @@
 				<li class="nav-item">
 					<a data-toggle="collapse" href="#base">
               <i class="icon ion-logo-buffer"></i>
-						<p>Base</p>
+						<p>Dinas</p>
 						<span class="caret"></span>
 					</a>
 					<div class="collapse" id="base">
 						<ul class="nav nav-collapse">
 							<li>
 								<a href="demo-ready-pro-bootstrap/livepreview/examples/components/buttons.html">
-									<span class="sub-item">Buttons</span>
+									<span class="sub-item">Dinas</span>
+								</a>
+							</li>
+							<li>
+								<a href="demo-ready-pro-bootstrap/livepreview/examples/components/buttons.html">
+									<span class="sub-item">Sub Dinas</span>
 								</a>
 							</li>
 						</ul>

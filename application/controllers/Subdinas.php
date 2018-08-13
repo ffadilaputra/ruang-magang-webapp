@@ -2,12 +2,12 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Dinas extends MY_Controller {
+class Subdinas extends MY_Controller {
 
   public function __construct()
   {
     parent::__construct();
-    $this->load->model('Dinas_model');
+    $this->load->model('Subdinas_model');
   }
 
   public function index(){
