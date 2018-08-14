@@ -60,18 +60,48 @@
 					<div class="collapse" id="base">
 						<ul class="nav nav-collapse">
 							<li>
-								<a href="demo-ready-pro-bootstrap/livepreview/examples/components/buttons.html">
+								<a href="{{base_url('dinas')}}">
 									<span class="sub-item">Dinas</span>
 								</a>
 							</li>
 							<li>
-								<a href="demo-ready-pro-bootstrap/livepreview/examples/components/buttons.html">
+								<a href="{{base_url('subdinas')}}">
 									<span class="sub-item">Sub Dinas</span>
 								</a>
 							</li>
 						</ul>
 					</div>
 				</li>
+
+				<li class="nav-item">
+					<a data-toggle="collapse" href="#baseuser">
+              <i class="icon ion-logo-buffer"></i>
+						<p>User</p>
+						<span class="caret"></span>
+					</a>
+					<div class="collapse" id="baseuser">
+						<ul class="nav nav-collapse">
+							<li>
+								<a href="{{base_url('Admin')}}">
+									<span class="sub-item">Admin</span>
+								</a>
+							</li>
+							<li>
+								<a href="{{base_url('subdinas')}}">
+									<span class="sub-item">Dinas</span>
+								</a>
+							</li>
+
+							<li>
+								<a href="{{base_url('subdinas')}}">
+									<span class="sub-item">User</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+
+
 				<li class="nav-item">
 					<a href="#">
 						<i class="icon ion-md-calendar"></i>

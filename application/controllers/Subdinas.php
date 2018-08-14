@@ -11,40 +11,44 @@ class Subdinas extends MY_Controller {
   }
 
   public function index(){
-        $data['dinas'] = Dinas_model::all();
-        $this->view('admin.dinas.index',$data);
+        $data['subdinas'] = Subdinas_model::all();
+        $this->view('admin.dinas.subdinas.index',$data);
   }
 
   public function create(){
-        $this->view('admin.dinas.create');
+        $this->view('admin.dinas.subdinas.create');
   }
 
   public function store(){
     //validasi form
     $this->validate($this->input->post(), [
       'nama_dinas' => 'required|string',
+      'nama_sub_bidang' => 'required|string',
+      'kuota' => 'required|string',
     ]);
     //Proses Input
-    Dinas_model::create($this->input->post());
-    redirect('dinas');
+    Subdinas_model::create($this->input->post());
+    redirect('subdinas');
   }
 
   public function edit($id= NULL){
-    $data['dinas'] = Dinas_model::find($id);
-    $this->view('admin.dinas.edit',$data);
+    $data['subdinas'] = Subdinas_model::find($id);
+    $this->view('admin.dinas.subdinas.edit',$data);
   }
 
   public function update($id){
     $this->validate($this->input->post(), [
       'nama_dinas' => 'required|string',
+      'nama_sub_bidang' => 'required|string',
+      'kuota' => 'required|string',
     ]);
-    Dinas_model::find($id)->update($this->input->post());
-    redirect('dinas');
+    Subdinas_model::find($id)->update($this->input->post());
+    redirect('subdinas');
   }
 
   public function delete($id){
-    Dinas_model::destroy($id);
-    redirect('dinas');
+    Subdinas_model::destroy($id);
+    redirect('subdinas');
   }
 
 }
