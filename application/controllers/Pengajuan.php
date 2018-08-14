@@ -31,24 +31,24 @@ class Pengajuan extends MY_Controller {
     redirect('pengajuan_pkl');
   }
 
-  public function edit($id= NULL){
+  public function edit($id){
     $data['pengajuan_pkl'] = Pengajuan_model::find($id);
     $this->view('admin.pengajuan_pkl.edit',$data);
   }
 
-  public function update($id){
-    $this->validate($this->input->post(), [
-      'id_pengaju' => 'required|string',
-      'status_kesbangpol' => 'required|string',
-	  'status_dinas' => 'required|string',
-    ]);
-    Pengajuan_model::find($id)->update($this->input->post());
-    redirect('pengajuan_pkl');
+  public function verifKesbangpol($id){
+    Pengajuan_model::find($id)->update(['status_kesbangpol'=> 1]);
+    redirect('pengajuan');
+  }
+
+  public function verifDinas($id){
+    Pengajuan_model::find($id)->update(['status_dinas'=> 1]);
+    redirect('pengajuan');
   }
 
   public function delete($id){
     Pengajuan_model::destroy($id);
-    redirect('pengajuan_pkl');
+    redirect('pengajuan');
   }
 
 }
