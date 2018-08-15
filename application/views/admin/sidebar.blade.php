@@ -87,7 +87,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="{{base_url('subdinas')}}">
+								<a href="{{base_url('Usdinas')}}">
 									<span class="sub-item">Dinas</span>
 								</a>
 							</li>
