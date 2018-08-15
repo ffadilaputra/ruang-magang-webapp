@@ -93,7 +93,7 @@
 							</li>
 
 							<li>
-								<a href="{{base_url('subdinas')}}">
+								<a href="{{base_url('ususer')}}">
 									<span class="sub-item">User</span>
 								</a>
 							</li>
