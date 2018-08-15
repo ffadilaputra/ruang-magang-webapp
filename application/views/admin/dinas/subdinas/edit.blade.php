@@ -17,6 +17,7 @@
                     <div class="form-group">
                       <label for="dinas">Nama Dinas</label>
                       <input value="{{ $subdinas->nama_dinas }}" name="nama_dinas" type="text" class="form-control" placeholder="Nama Dinas">
+
                       {{-- Validasi Field --}}
                       @if($errors->has('nama_dinas'))
                         <small class="text-danger">{{ $errors->first('nama_dinas') }}</small>
@@ -41,7 +42,7 @@
                       @endif
                     </div>
 
-                 
+
                   </div>
                   <div class="card-action">
                     <button class="btn btn-success">Submit</button>

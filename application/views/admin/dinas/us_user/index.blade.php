@@ -29,9 +29,8 @@
                     @foreach($ususer as $data)
                     <tr>
                         <td>{{ $no++ }}</td>
-                         <td>{{ $data->nama }}</td>
-                          <td>{{ $data->email }}</td>
-
+                        <td>{{ $data->nama }}</td>
+                        <td>{{ $data->email }}</td>
                         <td>
                           <a href="{{ base_url('Ususer/edit/'.$data->id_user) }}" class="btn btn-success"><i class="icon ion-md-create"></i></a>
                           <a href="{{ base_url('Ususer/delete/'.$data->id_user)}}" class="btn btn-danger"><i class="icon ion-md-trash"></i></a>

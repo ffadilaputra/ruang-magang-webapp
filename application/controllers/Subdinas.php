@@ -7,6 +7,7 @@ class Subdinas extends MY_Controller {
   public function __construct()
   {
     parent::__construct();
+    $this->load->model('Dinas_model');
     $this->load->model('Subdinas_model');
   }
 
@@ -16,7 +17,8 @@ class Subdinas extends MY_Controller {
   }
 
   public function create(){
-        $this->view('admin.dinas.subdinas.create');
+        $data['dinas'] = Dinas_model::all();
+        $this->view('admin.dinas.subdinas.create',$data);
   }
 
   public function store(){

@@ -16,7 +16,12 @@
                   <div class="card-body">
                     <div class="form-group">
                       <label for="dinas">Nama Dinas</label>
-                      <input name="nama_dinas" type="text" class="form-control" placeholder="Nama Dinas">
+                      <select class="form-control" name="nama_dinas" id="">
+                          <option value="0">-- Pilih --</option>
+                          @foreach($dinas as $list)
+                            <option  value="{{ $list->nama_dinas }}">{{ $list->nama_dinas }}</option>
+                          @endforeach
+                      </select>
                       {{-- Validasi Field --}}
                       @if($errors->has('nama_dinas'))
                         <small class="text-danger">{{ $errors->first('nama_dinas') }}</small>

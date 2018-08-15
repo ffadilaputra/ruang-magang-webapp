@@ -33,6 +33,7 @@ class MY_Controller extends CI_Controller {
         $trans = new Translator($loader, 'en');
         $this->validator = new Factory($trans);
         $this->validator->setPresenceVerifier($this->getPresenceVerifier());
+
     }
 
     protected function view($view, $data = [], $return = false){
