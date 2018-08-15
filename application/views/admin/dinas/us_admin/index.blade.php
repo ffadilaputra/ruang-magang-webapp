@@ -25,12 +25,13 @@
                     </tr>
                 </thead>
                 <tbody>
+                  <?php $no=1; ?>
                     @foreach($Admin as $data)
                     <tr>
-                        <td>{{ $data->id_admin }}</td>
+                        <td>{{ $no++ }}</td>
                          <td>{{ $data->nama }}</td>
                           <td>{{ $data->email }}</td>
-                       
+
                         <td>
                           <a href="{{ base_url('Admin/edit/'.$data->id_admin) }}" class="btn btn-success"><i class="icon ion-md-create"></i></a>
                           <a href="{{ base_url('Admin/delete/'.$data->id_admin)}}" class="btn btn-danger"><i class="icon ion-md-trash"></i></a>

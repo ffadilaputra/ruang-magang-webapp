@@ -26,9 +26,10 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <?php $no = 1; ?>
                     @foreach($subdinas as $data)
                     <tr>
-                        <td>{{ $data->id_sub_bidang }}</td>
+                        <td>{{ $no++ }}</td>
                          <td>{{ $data->nama_dinas }}</td>
                           <td>{{ $data->nama_sub_bidang }}</td>
                            <td>{{ $data->kuota }}</td>
