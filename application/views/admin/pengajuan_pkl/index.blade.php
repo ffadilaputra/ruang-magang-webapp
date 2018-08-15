@@ -14,6 +14,7 @@
                 <thead>
                     <tr>
                         <th>No</th>
+                        <th>Nama Ketua</th>
                         <th>Status Kesbangpol</th>
                         <th>Status Dinas</th>
                         <th>Verifikasi</th>
@@ -21,9 +22,11 @@
                     </tr>
                 </thead>
                 <tbody>
+                  <?php $no=1; ?>
                     @foreach($pengajuan_pkl as $data)
                     <tr>
-                        <td>{{ $data->id_pengaju }}</td>
+                        <td>{{ $no++ }}</td>
+                        <td>{{ $data->detailPengaju->nama_pengaju }}</td>
                         <td> @if($data->status_kesbangpol == 0)
                           {{'Belum'}}
                         @elseif ($data->status_kesbangpol == 1)
@@ -39,12 +42,12 @@
                           @if($data->status_kesbangpol != 1)
                             <a href="{{ base_url('pengajuan/verifKesbangpol/'.$data->id_pengajuan) }}" class="btn btn-success"><i class="icon ion-md-checkmark"></i>&nbsp;Kesbangpol</a>
                           @else
-                            <a href="{{ base_url('pengajuan/verifKesbangpol/'.$data->id_pengajuan) }}" class="disabled btn btn-success"><i class="icon ion-md-checkmark"></i>&nbsp;Kesbangpol</a>
+                            <a href="{{ base_url('pengajuan/verifKesbangpol/'.$data->id_pengajuan) }}" class="disabled btn btn-success"><i class="icon ion-md-checkmark"></i>&nbsp;Terverifikasi</a>
                           @endif
                           @if($data->status_dinas != 1)
                             <a href="{{ base_url('pengajuan/verifDinas/'.$data->id_pengajuan) }}" class="btn btn-primary"><i class="icon ion-md-checkmark">&nbsp;Dinas</i></a>
                           @else
-                            <a href="{{ base_url('pengajuan/verifDinas/'.$data->id_pengajuan) }}" class="btn btn-primary disabled"><i class="icon ion-md-checkmark">&nbsp;Dinas</i></>
+                            <a href="{{ base_url('pengajuan/verifDinas/'.$data->id_pengajuan) }}" class="btn btn-primary disabled"><i class="icon ion-md-checkmark">&nbsp;Terverifikasi</i></>
                           @endif
                         </td>
                         @else()

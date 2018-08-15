@@ -31,7 +31,7 @@
                         <small class="text-danger">{{ $errors->first('status_kesbangpol') }}</small>
                       @endif
                     </div>
-                    
+
                      <div class="form-group">
                       <label for="pengajuan_pkl"></label>
                       <input name="status_dinas" type="text" class="form-control" placeholder="Status Dinas">
