@@ -456,9 +456,9 @@ $config['global_xss_filtering'] = TRUE;
 | 'csrf_exclude_uris' = Array of URIs which ignore CSRF checks
 */
 $config['csrf_protection'] = TRUE; // SET TRUE UNTUK ENABLE CSRF PROTECTION
-$config['csrf_token_name'] = 'csrf_test_name'; // NAMA CSRF TOKEN YANG AKAN DIGUNAKAN
-$config['csrf_cookie_name'] = 'csrf_cookie_name';
-$config['csrf_expire'] = 7200; // JANGKA WAKTU CSRF TOKEN EXPIRED (DALAM DETIK)
+$config['csrf_token_name'] = 'wu'; // NAMA CSRF TOKEN YANG AKAN DIGUNAKAN
+$config['csrf_cookie_name'] = 'cookis';
+$config['csrf_expire'] = 72000; // JANGKA WAKTU CSRF TOKEN EXPIRED (DALAM DETIK)
 $config['csrf_regenerate'] = TRUE; // JIKA TRUE MAKA CSRF TOKEN AKAN DI GENERATE ULANG UNTUK SETIAP REQUEST
 $config['csrf_exclude_uris'] = array(); // ARRAY BERISI LIST URI YANG TIDAK MENGGUNAKAN CSRF PROTECTION
 

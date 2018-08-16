@@ -40,9 +40,8 @@
 
     <div class="container container-signup animated fadeIn" style="display: none;">
       <h3 class="text-center">Sign Up</h3>
-    <form action="" method="POST"></form>
-        <input type="hidden" name="<?php echo $csrf['name'];?>" value="<?=$csrf['hash'];?>" />
-        <div class="login-form">
+      <?= form_open('register') ?>
+      <div class="login-form">
         <div class="form-group form-floating-label">
           <input id="email" name="email" type="email" class="form-control input-border-bottom" required="">
           <label for="email" class="placeholder">Email</label>
@@ -71,9 +70,10 @@
         </div>
         <div class="form-action">
           <a href="#" id="show-signin" class="btn btn-danger btn-rounded btn-login mr-3">Cancel</a>
-          <a href="#" class="btn btn-primary btn-rounded btn-login">Sign Up</a>
+          <a type="submit"class="btn btn-primary btn-rounded btn-login">Sign Up</a>
         </div>
       </div>
+      <?= form_close() ?>
     </div>
   </div>
 

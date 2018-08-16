@@ -23,10 +23,10 @@ class Ususer extends MY_Controller {
     //validasi form
     $this->validate($this->input->post(), [
       'nama' => 'required|string',
-      'password' => 'required|string',
-      'email' => 'required|string',
+      'password' => 'required|string|min:6',
+      'email' => 'required|email',
     ]);
-    //Proses Input
+    $_POST['password'] = md5($_POST['password']);
     Ususer_model::create($this->input->post());
     redirect('Ususer');
   }

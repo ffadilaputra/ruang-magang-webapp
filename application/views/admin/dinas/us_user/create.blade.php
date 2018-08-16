@@ -12,8 +12,9 @@
                   <div class="card-header">
                     <div class="card-title">Form user </div>
                   </div>
-                  <form action="{{ base_url('Ususer/store') }}" method="post" enctype="multipart/form-data">
-                  <div class="card-body">
+                  {{-- <form action="{{ base_url('Ususer/store') }}" method="post" enctype="multipart/form-data" accept-charset="utf-8"> --}}
+                    <?= form_open('ususer/store') ?>
+                    <div class="card-body">
                     <div class="form-group">
                       <label for="dinas">Username</label>
                       <input name="nama" type="text" class="form-control" placeholder="Masukkan Username">
@@ -24,7 +25,7 @@
                     </div>
                     <div class="form-group">
                       <label for="dinas">Password</label>
-                      <input name="password" type="Password" class="form-control" placeholder="Masukkan Password Anda">
+                      <input name="password" type="password" class="form-control" placeholder="Masukkan Password Anda">
                       {{-- Validasi Field --}}
                       @if($errors->has('password'))
                         <small class="text-danger">{{ $errors->first('password') }}</small>
@@ -40,13 +41,13 @@
                       @endif
                     </div>
 
-
                   </div>
                   <div class="card-action">
                     <button class="btn btn-success">Submit</button>
                     <button class="btn btn-danger">Cancel</button>
                   </div>
-                  </form>
+                  {{--   --}}
+                  <?= form_close() ?>
                 </div>
           </div>
         </div>
