@@ -1,3 +1,4 @@
+
    @include('beranda.header')
 <body>
 <!--wrapper start-->
@@ -38,6 +39,7 @@
                             </div>
                         </div>
                     </div>
+<!--  -->
                 </div>
             </div>
         </div>
