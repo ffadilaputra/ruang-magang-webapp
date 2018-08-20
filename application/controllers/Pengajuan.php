@@ -29,7 +29,7 @@ class Pengajuan extends MY_Controller {
     $this->validate($this->input->post(), [
       'id_pengaju' => 'required|string',
       'status_kesbangpol' => 'required|string',
-	  'status_dinas' => 'required|string',
+	    'status_dinas' => 'required|string',
     ]);
     //Proses Input
     Pengajuan_model::create($this->input->post());
