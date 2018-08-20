@@ -10,10 +10,16 @@
         <div class="form-group form-floating-label">
           <input id="username" name="nama" type="text" class="form-control input-border-bottom" required="">
           <label for="username" class="placeholder">Username</label>
+            @if($errors->has('nama'))
+              <small class="text-danger">{{ $errors->first('nama') }}</small>
+            @endif
         </div>
         <div class="form-group form-floating-label">
           <input id="password" name="password" type="password" class="form-control input-border-bottom" required="">
           <label for="password" class="placeholder">Password</label>
+            @if($errors->has('password'))
+              <small class="text-danger">{{ $errors->first('password') }}</small>
+            @endif
           <div class="show-password">
             <i class="icon ion-md-eye"></i>
           </div>

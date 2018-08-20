@@ -9,7 +9,7 @@ class Auth extends MY_Controller {
   }
 
   public function index(){
-    $this->redirectIfAuthenticated('user');
+    $this->redirectIfAuthenticated('user','/user');
     $this->view('auth.login.index');
   }
 
