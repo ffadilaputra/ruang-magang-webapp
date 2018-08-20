@@ -1,133 +1,564 @@
-@extends('beranda.template')
+   @include('beranda.header')
+<body>
+<!--wrapper start-->
+<div class="wrapper" id="wrapper">
+    
+    <!--header-->
+    <header>
+    <div class="banner row" id="banner">        
+        <div class="parallax text-center" style="background-image: url(assets/ruang-magang-website/img/among-tani.jpg);">
+            <div class="parallax-pattern-overlay">
+                <div class="container text-center" style="height:600px;padding-top:170px;">
+                    <a href="#"><img id="site-title" class=" wow fadeInDown" wow-data-delay="0.0s" wow-data-duration="0.9s" src="<?php base_url(); ?>assets/ruang-magang-website/img/logo-kota.png" alt="logo"/></a>
 
-    @section('content')
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Logo </a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Sign</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Signup</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <header class="masthead">
-      <div class="container h-100">
-        <div class="row h-100">
-          <div class="col-lg-7 my-auto">
-            <div class="header-content mx-auto">
-              <h1 class="mb-5">New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!</h1>
-              <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Start Now for Free!</a>
-            </div>
-          </div>
-          <div class="col-lg-5 my-auto">
-            <div class="device-container">
-              <div class="device-mockup iphone6_plus portrait white">
-                <div class="device">
-                  <div class="screen">
-                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                    <!-- <img src="img/demo-screen-1.jpg" class="img-fluid" alt=""> -->
-                  </div>
-                  <div class="button">
-                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                  </div>
+                    <h4 class="intro wow zoomIn" wow-data-delay="0.4s" wow-data-duration="0.9s" style="font-family: 'PT Sans Narrow', sans-serif;">Ruang magang</h4>
+                    <h2 class="intro wow zoomIn" wow-data-delay="0.4s" wow-data-duration="0.9s">Pemerintah Kota Wisata Batu</h2>
+                      
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
+    </div>  
+    <div class="menu">
+        <div class="navbar-wrapper">
+            <div class="container">
+                <div class="navwrapper">
+                    <div class="navbar navbar-inverse navbar-static-top">
+                        <div class="container">
+                            <div class="navArea">
+                                <div class="navbar-collapse collapse">
+                                    <ul class="nav navbar-nav">
+                                        <li class="menuItem active"><a href="#wrapper">Beranda</a></li>
+                                        <li class="menuItem"><a href="#aboutus">Tentang</a></li>
+                                        <li class="menuItem"><a href="#specialties">Contact</a></li>
+                                        <li class="menuItem"><a href="#gallery">Dinas</a></li>
+                                        <li class="menuItem"><a href="#feedback">Login</a></li>
+                                        <li class="menuItem"><a href="#contact">Saran</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
     </header>
-
-    <section class="download bg-primary text-center" id="download">
-      <div class="container">
+        
+    <!--about us-->
+    <section class="aboutus" id="aboutus">
+    <div class="container">
+        <div class="heading text-center">
+            <img class="dividerline" src="<?php base_url(); ?>assets/ruang-magang-website/img/sep.png" alt="">
+            <h2 style="font-family: 'Roboto', sans-serif;">Ruang Magang</h2>
+            <img class="dividerline" src="<?php base_url(); ?>assets/ruang-magang-website/img/sep.png" alt="">
+            <h3 style="font-family: 'Roboto', sans-serif;">Ruang Magang adalah salah satu aplikasi untuk magang di lingkungan dinas pemerintah kota batu, terbuka untuk Pelajar SMK atau Mahasiswa </h3>
+        </div> 
+        <div class="container w960">
         <div class="row">
-          <div class="col-md-8 mx-auto">
-            <h2 class="section-heading">Discover what all the buzz is about!</h2>
-            <p>Our app is available on any mobile device! Download now to get started!</p>
-            <div class="badges">
-              <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
-              <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="features" id="features">
-      <div class="container">
-        <div class="section-heading text-center">
-          <h2>Unlimited Features, Unlimited Fun</h2>
-          <p class="text-muted">Check out what you can do with this app theme!</p>
-          <hr>
+          <h3>Visi</h3>
+<blockquote >KOTA BATU SENTRA PERTANIAN ORGANIK BERBASIS  KEPARIWASATAAN INTERNASIONAL
+Ditunjang Oleh Pendidikan Yang Tepatguna dan Berdaya Saing Ditopang  Sumberdaya (Alam, Manusia Dan Budaya) Yang Tangguh Diselenggarakan Oleh Pemerintahan Yang Baik, Kreatif, Inovatif, Dijiwai Oleh Keimanan Dan Ketaqwaan Kepada Tuhan Yang Maha Esa<cite>TAHUN 2012-2017<br/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></cite> 
+</blockquote>
+        <h3>Misi</h3>
+        <blockquote>
+          <p>1. Peningkatan Kualitas Hidup Antar Umat Beragama</p>
+          <p>2. Reformasi Birokrasi dan Tata Kelola Pemerintahan</p>
+           <p>3. Mengembangkan Pertanian Organik dan Perdagangan Hasil Pertanian Organik</p>
+            <p>4. Meningkatkan Posisi Peran Dari Kota Sentra Pariwisata Menjadi Kota Kepariwisataan Internasional</p>
+             <p>5. Optimalisasi Pemerintahan Daerah</p>
+              <p>6. Peningkatan Kualitas Pendidik Dan Lembaga Pendidikan</p>
+               <p>7. Peningkatan Kualitas Kesehatan</p>
+                <p>8. Pengembangan Infrastuktur (Sektor Fisik) Khususnya Perkantoran Pemerintah , Fasilitas Publik, Prasarana Dan Sarana Lalu     Lintas </p>
+                 <p>9. Meningkatkan Penyelenggaraan Pemerintah Desa, Guna Peningkatkan Pelayanan Kepada Masyarakat</p>
+                  <p>10. Menciptakan Stabilitas Dan Kehidupan Politik Di Kota Batu Yang Harmonis Dan Demokratis</p>
+                   <p>11. Pemberdayaan Masyarakat Melalui Koperasi Dan UKM      </p>
+
+          <cite>TAHUN 2012-2017<br/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></cite> </blockquote>
+        </div>
+    </div>         
+    </section>
+    
+    <!--specialties-->
+    <section class="specialties" id="specialties">
+    <div class="container">
+        <div class="heading text-center">
+             <img class="dividerline" src="<?php base_url(); ?>assets/ruang-magang-website/img/sep.png" alt="">
+            <h2 style="font-family: 'PT Sans Narrow', sans-serif;">Our Specialties</h2>
+           <img class="dividerline" src="<?php base_url(); ?>assets/ruang-magang-website/img/sep.png" alt="">
+            <h3 style="font-family: 'Roboto', sans-serif;">Have you ever felt worried that your party will not raise up to your guest expectations? In design, vertical rhythm is the structure that guides a reader's eye through the content. Good vertical rhythm makes a layout more balanced and beautiful and its content more readable. The time signature in sheet music visually depicts a song's rhythm, while for us, the lines of the baseline grid depict the rhythm of our content and give us guidelines.</h3>
         </div>
         <div class="row">
-          <div class="col-lg-4 my-auto">
-            <div class="device-container">
-              <div class="device-mockup iphone6_plus portrait white">
-                <div class="device">
-                  <div class="screen">
-                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                    <img src="img/demo-screen-1.jpg" class="img-fluid" alt="">
-                  </div>
-                  <div class="button">
-                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                  </div>
+            <div class="col-md-4">
+                <div class="restmenuwrap">
+                    <h3 class="maincat notopmarg text-center">APPETIZERS</h3>
+                    <div class="restitem clearfix">
+                        <div class="rm-thumb" style="background-image: url(http://wowthemes.net/demo/leroy/img/dummies/1.jpg)">
+                        </div>
+                        <h5>Sweet, Sticky and Spicy Chicken</h5>
+                        <p>
+                            Pepperoni, mozzarella cheese and Italian seasonings are rolled together, baked to delicious perfection, then cut into bite-sized delights. Your guests will beg for the recipe!"
+                        </p>
+                    </div>
+                    <div class="restitem clearfix">
+                        <div class="rm-thumb" style="background-image: url(http://wowthemes.net/demo/leroy/img/dummies/2.jpg)">
+                        </div>
+                        <h5>Luxur Oyster</h5>
+                        <p>
+                            Pepperoni, mozzarella cheese and Italian seasonings are rolled together, baked to delicious perfection, then cut into bite-sized delights. Your guests will beg for the recipe!"
+                        </p>
+                    </div>
+                    <div class="restitem clearfix">
+                        <div class="rm-thumb" style="background-image: url(http://wowthemes.net/demo/leroy/img/dummies/3.jpg)">
+                        </div>
+                        <h5>Sweet, Sticky and Spicy Chicken</h5>
+                        <p>
+                            Pepperoni, mozzarella cheese and Italian seasonings are rolled together, baked to delicious perfection, then cut into bite-sized delights. Your guests will beg for the recipe!"
+                        </p>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="col-lg-8 my-auto">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-screen-smartphone text-primary"></i>
-                    <h3>Device Mockups</h3>
-                    <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
-                  </div>
+            <div class="col-md-4">
+                <div class="restmenuwrap">
+                    <h3 class="maincat notopmarg text-center">MAIN</h3>
+                    <div class="restitem clearfix">
+                        <div class="rm-thumb" style="background-image: url(http://wowthemes.net/demo/leroy/img/dummies/4.jpg)">
+                        </div>
+                        <h5>Sweet, Sticky and Spicy Chicken</h5>
+                        <p>
+                            Pepperoni, mozzarella cheese and Italian seasonings are rolled together, baked to delicious perfection, then cut into bite-sized delights. Your guests will beg for the recipe!"
+                        </p>
+                    </div>
+                    <div class="restitem clearfix">
+                        <div class="rm-thumb" style="background-image: url(http://wowthemes.net/demo/leroy/img/dummies/5.jpg)">
+                        </div>
+                        <h5>Luxur Oyster</h5>
+                        <p>
+                            Pepperoni, mozzarella cheese and Italian seasonings are rolled together, baked to delicious perfection, then cut into bite-sized delights. Your guests will beg for the recipe!"
+                        </p>
+                    </div>
+                    <div class="restitem clearfix">
+                        <div class="rm-thumb" style="background-image: url(http://wowthemes.net/demo/leroy/img/dummies/6.jpg)">
+                        </div>
+                        <h5>Sweet, Sticky and Spicy Chicken</h5>
+                        <p>
+                            Pepperoni, mozzarella cheese and Italian seasonings are rolled together, baked to delicious perfection, then cut into bite-sized delights. Your guests will beg for the recipe!"
+                        </p>
+                    </div>
                 </div>
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-camera text-primary"></i>
-                    <h3>Flexible Use</h3>
-                    <p class="text-muted">Put an image, video, animation, or anything else in the screen!</p>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-present text-primary"></i>
-                    <h3>Free to Use</h3>
-                    <p class="text-muted">As always, this theme is free to download and use for any purpose!</p>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-lock-open text-primary"></i>
-                    <h3>Open Source</h3>
-                    <p class="text-muted">Since this theme is MIT licensed, you can use it commercially!</p>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
+            <div class="col-md-4">
+                <div class="restmenuwrap">
+                    <h3 class="maincat notopmarg text-center">DESSERTS</h3>
+                    <div class="restitem clearfix">
+                        <div class="rm-thumb" style="background-image: url(http://wowthemes.net/demo/leroy/img/dummies/7.jpg)">
+                        </div>
+                        <h5>Sweet, Sticky and Spicy Chicken</h5>
+                        <p>
+                            Pepperoni, mozzarella cheese and Italian seasonings are rolled together, baked to delicious perfection, then cut into bite-sized delights. Your guests will beg for the recipe!"
+                        </p>
+                    </div>
+                    <div class="restitem clearfix">
+                        <div class="rm-thumb" style="background-image: url(http://wowthemes.net/demo/leroy/img/dummies/8.jpg)">
+                        </div>
+                        <h5>Luxur Oyster</h5>
+                        <p>
+                            Pepperoni, mozzarella cheese and Italian seasonings are rolled together, baked to delicious perfection, then cut into bite-sized delights. Your guests will beg for the recipe!"
+                        </p>
+                    </div>
+                    <div class="restitem clearfix">
+                        <div class="rm-thumb" style="background-image: url(http://wowthemes.net/demo/leroy/img/dummies/9.jpg)">
+                        </div>
+                        <h5>Sweet, Sticky and Spicy Chicken</h5>
+                        <p>
+                            Pepperoni, mozzarella cheese and Italian seasonings are rolled together, baked to delicious perfection, then cut into bite-sized delights. Your guests will beg for the recipe!"
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </div>
     </section>
-@endsection
+    
+    <!--gallery-->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="heading text-center">
+                <img class="dividerline" src="<?php base_url(); ?>assets/ruang-magang-website/img/sep.png" alt="">
+                <h2 style="font-family: 'Roboto', sans-serif;">Dinas Pemerintahan</h2>
+                <img class="dividerline" src="<?php base_url(); ?>assets/ruang-magang-website/img/sep.png" alt="">
+            </div>
+            
+            <div id="grid-gallery" class="grid-gallery">
+
+                    <section class="grid-wrap">
+                        <ul class="grid">
+                          
+                            <li>
+                                <figure>
+                                    <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg" />
+                                    <figcaption style="height:156px;"><h3>Dinas Komunikasi dan Informatika Kota Batu </h3><p>Portland nulla butcher ea XOXO, consequat Bushwick Pinterest elit twee pickled direct. </p></figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                       <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg"" alt="" />
+                                    <figcaption  style="height:156px;"><h3>Dinas Pendidikan</h3><p>Bicycle rights flannel Shoreditch, art party laboris Bushwick sriracha.</p></figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                     <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg"" alt="" />
+                                    <figcaption  style="height:156px;"><h3>Dinas Pariwisata Kota Batu</h3><p>Once there was a little asparagus, he was green and lonely.</p></figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg"" alt="" />
+                                    <figcaption style="height:156px;"><h3>Dinas Sosial Kota Batu</h3><p>Chillwave hoodie ea gentrify aute sriracha consequat.</p></figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                      <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg"" alt="" />
+                                    <figcaption style="height:156px;"><h3>Dinas Perhubungan</h3><p>Laborum tattooed iPhone, Schlitz irure nulla Tonx retro 90's chia cardigan quis before they sold out. </p></figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                     <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg"" alt="" />
+                                    <figcaption style="height:156px;"><h3>Dinas Kesehatan Kota Batu</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
+                                </figure>
+                            </li>
+                            
+                            <li>
+                                <figure>
+                                      <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg"" alt="" />
+                                    <figcaption style="height:156px;"><h3>Dinas Pertanian</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
+                                </figure>
+                            </li>
+                            
+                            <li>
+                                <figure>
+                                      <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg"" alt="" />
+                                    <figcaption style="height:156px;"><h3>Dinas Pekerjaan Umum Cipta Karya Dan Tata Ruang Kota</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
+                                </figure>
+                            </li>
+
+
+                            <li>
+                                <figure>
+                                     <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg"" alt="" />
+                                    <figcaption style="height:156px;"<h3>Dinas Perumahan</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
+                                </figure>
+                            </li>
+
+                            <li>
+                                <figure>
+                                       <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg"" alt="" />
+                                    <figcaption style="height:156px;"><h3>Dinas Penanaman Modal dan PTSP Kota Batu</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
+                                </figure>
+                            </li>
+
+
+                            <li>
+                                <figure>
+                                    <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg"" alt="" />
+                                    <figcaption style="height:156px;"><h3>Dinas Pemuda Olahraga Sosial dan Ketenagakerjaan Kota Batu</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
+                                </figure>
+                            </li>
+
+
+                            <li>
+                                <figure>
+                                     <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg"" alt="" />
+                                    <figcaption style="height:156px;"><h3>Dinas Peternakan</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
+                                </figure>
+                            </li>
+
+                            <li>
+                                <figure>
+                                    <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg"" alt="" />
+                                    <figcaption><h3>Dinas Koperasi UMKM Perdagangan</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
+                                </figure>
+                            </li>
+
+                            <li>
+                                <figure>
+                                      <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg"" alt="" />
+                                    <figcaption style="height:156px;"><h3>Dinas Kesehatan Kota Batu</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
+                                </figure>
+                            </li>
+
+                            <li>
+                                <figure>
+                                    <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg"" alt="" />
+                                    <figcaption style="height:156px;"><h3>Dinas Catatan Sipil Dan Kependudukan</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
+                                </figure>
+                            </li>
+
+                            <li>
+                                <figure>
+                                     <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg"" alt="" />
+                                    <figcaption style="height:156px;"><h3>Dinas Kependudukan Dan Pencatatan Sipil Kota Batu</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
+                                </figure>
+                            </li>
+
+                            <li>
+                                <figure>
+                                     <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg"" alt="" />
+                                    <figcaption style="height:156px;"><h3>Dinas Pemadam Kebakaran Kota Batu</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
+                                </figure>
+                            </li>
+
+                            <li>
+                                <figure>
+                                     <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg"" alt="" />
+                                    <figcaption style="height:156px;"><h3>Dinas Perindag Kota Batu</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
+                                </figure>
+                            </li>
+
+
+                        
+                        </ul>
+                    </section><!-- // end small images -->
+                    
+                    <section class="slideshow">
+                        <ul class="grid">
+                          
+                            <li>
+                                <figure>
+                                    <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg" />
+                                    <figcaption style="height:156px;"><h3>Dinas Komunikasi dan Informatika Kota Batu </h3><p>Portland nulla butcher ea XOXO, consequat Bushwick Pinterest elit twee pickled direct. </p></figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                       <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg"" alt="" />
+                                    <figcaption  style="height:156px;"><h3>Dinas Pendidikan</h3><p>Bicycle rights flannel Shoreditch, art party laboris Bushwick sriracha.</p></figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                     <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg"" alt="" />
+                                    <figcaption  style="height:156px;"><h3>Dinas Pariwisata Kota Batu</h3><p>Once there was a little asparagus, he was green and lonely.</p></figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg"" alt="" />
+                                    <figcaption style="height:156px;"><h3>Dinas Sosial Kota Batu</h3><p>Chillwave hoodie ea gentrify aute sriracha consequat.</p></figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                      <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg"" alt="" />
+                                    <figcaption style="height:156px;"><h3>Dinas Perhubungan</h3><p>Laborum tattooed iPhone, Schlitz irure nulla Tonx retro 90's chia cardigan quis before they sold out. </p></figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                     <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg"" alt="" />
+                                    <figcaption style="height:156px;"><h3>Dinas Kesehatan Kota Batu</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
+                                </figure>
+                            </li>
+                            
+                            <li>
+                                <figure>
+                                      <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg"" alt="" />
+                                    <figcaption style="height:156px;"><h3>Dinas Pertanian</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
+                                </figure>
+                            </li>
+                            
+                            <li>
+                                <figure>
+                                      <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg"" alt="" />
+                                    <figcaption style="height:156px;"><h3>Dinas Pekerjaan Umum Cipta Karya Dan Tata Ruang Kota</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
+                                </figure>
+                            </li>
+
+
+                            <li>
+                                <figure>
+                                     <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg"" alt="" />
+                                    <figcaption style="height:156px;"<h3>Dinas Perumahan</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
+                                </figure>
+                            </li>
+
+                            <li>
+                                <figure>
+                                       <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg"" alt="" />
+                                    <figcaption style="height:156px;"><h3>Dinas Penanaman Modal dan PTSP Kota Batu</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
+                                </figure>
+                            </li>
+
+
+                            <li>
+                                <figure>
+                                    <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg"" alt="" />
+                                    <figcaption style="height:156px;"><h3>Dinas Pemuda Olahraga Sosial dan Ketenagakerjaan Kota Batu</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
+                                </figure>
+                            </li>
+
+
+                            <li>
+                                <figure>
+                                     <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg"" alt="" />
+                                    <figcaption style="height:156px;"><h3>Dinas Peternakan</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
+                                </figure>
+                            </li>
+
+                            <li>
+                                <figure>
+                                    <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg"" alt="" />
+                                    <figcaption><h3>Dinas Koperasi UMKM Perdagangan</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
+                                </figure>
+                            </li>
+
+                            <li>
+                                <figure>
+                                      <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg"" alt="" />
+                                    <figcaption style="height:156px;"><h3>Dinas Kesehatan Kota Batu</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
+                                </figure>
+                            </li>
+
+                            <li>
+                                <figure>
+                                    <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg"" alt="" />
+                                    <figcaption style="height:156px;"><h3>Dinas Catatan Sipil Dan Kependudukan</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
+                                </figure>
+                            </li>
+
+                            <li>
+                                <figure>
+                                     <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg"" alt="" />
+                                    <figcaption style="height:156px;"><h3>Dinas Kependudukan Dan Pencatatan Sipil Kota Batu</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
+                                </figure>
+                            </li>
+
+                            <li>
+                                <figure>
+                                     <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg"" alt="" />
+                                    <figcaption style="height:156px;"><h3>Dinas Pemadam Kebakaran Kota Batu</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
+                                </figure>
+                            </li>
+
+                            <li>
+                                <figure>
+                                     <img src="<?php base_url();?>assets/ruang-magang-website/img/ruang-magang.jpg"" alt="" />
+                                    <figcaption style="height:156px;"><h3>Dinas Perindag Kota Batu</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                        <nav>
+                            <span class="icon nav-prev"></span>
+                            <span class="icon nav-next"></span>
+                            <span class="icon nav-close"></span>
+                        </nav>
+                        <div class="info-keys icon">Navigate with arrow keys</div>
+                    </section><!-- // end slideshow -->
+                    
+                </div><!-- // grid-gallery -->
+            </div>
+    </section>
+    
+    <!--feedback-->
+    <section class="feedback" id="feedback">
+       <div class="heading text-center">
+            <img class="dividerline" src="<?php base_url(); ?>assets/ruang-magang-website/img/sep.png" alt="">
+            <h2 style="font-family: 'Roboto', sans-serif;">Login</h2>
+            <img class="dividerline" src="<?php base_url(); ?>assets/ruang-magang-website/img/sep.png" alt="">
+            <h3 style="font-family: 'Roboto', sans-serif;">Login User , Login Bangkesbangpol , Login Dinas</h3>
+        </div> 
+
+       <div class="row">
+            <div class="col-md-12">
+                <div class="papers text-center">
+                    <img src="http://wowthemes.net/demo/leroy/img/dummies/18.jpg" alt=""><br/>
+                    <h4 class="notopmarg nobotmarg">Login User</h4>
+          <form method="post" action="contact.php" id="contactform">
+          <input name="name" type="text" class="contact col-md-6" placeholder="Your Name *" >
+          <input name="email" type="password" class="contact noMarr col-md-6" placeholder="Password *" >
+  
+          <input type="submit" id="submit" class="contact submit" value="Login">
+          </form>
+                </div>
+            </div>  
+        </div>
+    </div>
+    </section>
+    
+    <!--feedback-->
+    <section class="contact" id="contact">
+    <div class="container">
+        <div class="heading">
+                <img class="dividerline" src="<?php base_url(); ?>assets/ruang-magang-website/img/sep.png" alt="">
+                <h2 style="font-family: 'Roboto', sans-serif;">Kontak Saran</h2>
+                <img class="dividerline" src="<?php base_url(); ?>assets/ruang-magang-website/img/sep.png" alt="">
+                <h3 style="font-family: 'Roboto', sans-serif;">Phasellus non dolor nibh. Nullam elementum tellus pretium feugiat.<br>
+                 Cras dictum tellus dui, vitae sollicitudin ipsum tincidunt in. Sed tincidunt tristique enim sed sollcitudin.</h3>
+        </div>
+    </div>
+     <div class="container w960">
+      <div class="row">
+        <div class="done">
+            <div class="alert alert-success">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                Your message has been sent. Thank you!
+            </div>
+        </div>
+       <form method="post" action="contact.php" id="contactform">
+          <input name="name" type="text" class="contact col-md-6" placeholder="Your Name *" >
+          <input name="email" type="email" class="contact noMarr col-md-6" placeholder="E-mail address *" >
+          <textarea name="comment" class="contact col-md-12" placeholder="Message *"></textarea>
+          <input type="submit" id="submit" class="contact submit" value="Send message">
+        </form>
+      </div>
+    </div>
+    </section>
+  
+  
+
+    @include('beranda.footer')
+    
+</div><!--wrapper end-->
+
+<!--Javascripts-->
+<script src="{{ base_url('assets/ruang-magang-website/') }}js/jquery.js"></script>
+<script src="{{ base_url('assets/ruang-magang-website/') }}js/modernizr.js"></script>
+<script src="{{ base_url('assets/ruang-magang-website/') }}js/bootstrap.js"></script>
+<script src="{{ base_url('assets/ruang-magang-website/') }}js/menustick.js"></script>
+<script src="{{ base_url('assets/ruang-magang-website/') }}js/parallax.js"></script>
+<script src="{{ base_url('assets/ruang-magang-website/') }}js/easing.js"></script>
+<script src="{{ base_url('assets/ruang-magang-website/') }}js/wow.js"></script>
+<script src="{{ base_url('assets/ruang-magang-website/') }}js/smoothscroll.js"></script>
+<script src="{{ base_url('assets/ruang-magang-website/') }}js/masonry.js"></script>
+<script src="{{ base_url('assets/ruang-magang-website/') }}js/imgloaded.js"></script>
+<script src="{{ base_url('assets/ruang-magang-website/') }}js/classie.js"></script>
+<script src="{{ base_url('assets/ruang-magang-website/') }}js/colorfinder.js"></script>
+<script src="{{ base_url('assets/ruang-magang-website/') }}js/gridscroll.js"></script>
+<script src="{{ base_url('assets/ruang-magang-website/') }}js/contact.js"></script>
+<script src="{{ base_url('assets/ruang-magang-website/') }}js/common.js"></script>
+
+<script type="text/javascript">
+jQuery(function($) {
+$(document).ready( function() {
+  //enabling stickUp on the '.navbar-wrapper' class
+    $('.navbar-wrapper').stickUp({
+        parts: {
+          0: 'banner',
+          1: 'aboutus',
+          2: 'specialties',
+          3: 'gallery',
+          4: 'feedback',
+          5: 'contact'
+        },
+        itemClass: 'menuItem',
+        itemHover: 'active',
+        topMargin: 'auto'
+        });
+    });
+});
+</script>
+</body>
+</html>
