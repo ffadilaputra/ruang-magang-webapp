@@ -101,6 +101,25 @@
 					</div>
 				</li>
 
+				<li class="nav-item">
+					<a data-toggle="collapse" href="#basemagang">
+              <i class="icon ion-logo-buffer"></i>
+						<p>Magang</p>
+						<span class="caret"></span>
+					</a>
+					<div class="collapse" id="basemagang">
+						<ul class="nav nav-collapse">
+							<li>
+								<a href="{{base_url('AnggotaMagang')}}">
+									<span class="sub-item">Anggota</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+
+
+
 
 				<li class="nav-item">
 					<a href="#">
