@@ -53,4 +53,5 @@ $route['default_controller'] = 'Beranda';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['register'] = 'Ususer/register';
+$route['pengaju'] = 'Pengaju/dashboard';
+

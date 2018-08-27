@@ -3,7 +3,9 @@
 class Beranda extends MY_Controller {
 
     public function index(){
-        $this->view('beranda.main');
-    }
+
+        $data['user'] = $this->session->userdata('logged_in');
+        $this->view('beranda.main',$data);
+      }
 
 }

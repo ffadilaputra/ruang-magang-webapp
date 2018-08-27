@@ -5,7 +5,7 @@
 <div class="wrapper wrapper-login">
     <div class="container container-login animated fadeIn" style="display: block;">
       <h3 class="text-center">Signup</h3>
-      <?= form_open('auth/process') ?>
+      <?= form_open('login/process') ?>
       <div class="login-form">
         <div class="form-group form-floating-label">
           <input id="username" name="nama" type="text" class="form-control input-border-bottom" required="">

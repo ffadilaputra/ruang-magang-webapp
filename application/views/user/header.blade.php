@@ -96,20 +96,14 @@
                                 <div class="user-box">
                                     <div class="u-img"><img src="<?= base_url() ?>/assets/backend/img/profile.jpg" alt="image profile"></div>
                                     <div class="u-text">
-                                        <h4>Hizrian</h4>
-                                        <p class="text-muted">hello@themekita.com</p><a href="index.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a>
+                                        <h4>{{ $user['nama'] }}</h4>
+                                        <p class="text-muted">{{ $user['email'] }}</p><a href="index.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a>
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">My Profile</a>
-                                <a class="dropdown-item" href="#">My Balance</a>
-                                <a class="dropdown-item" href="#">Inbox</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Account Setting</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Logout</a>
+                            <a class="dropdown-item" href="{{ base_url('login/logoutProcess') }}">Logout</a>
                             </li>
                         </ul>
                     </li>

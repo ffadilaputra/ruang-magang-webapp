@@ -4,8 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Ususer extends MY_Controller {
 
-  public function __construct()
-  {
+  public function __construct(){
     parent::__construct();
     $this->load->model('Ususer_model');
   }

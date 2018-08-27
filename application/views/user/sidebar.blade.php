@@ -10,8 +10,8 @@
           <div class="info">
             <a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
               <span>
-                Hizrian
-                <span class="user-level">Administrator</span>
+                {{ $user['nama'] }}
+                <span class="user-level">Pengaju</span>
                 <span class="caret"></span>
               </span>
             </a>
@@ -39,7 +39,7 @@
         </div>
         <ul class="nav">
           <li class="nav-item active">
-            <a href="#">
+          <a href="{{ base_url('pengaju') }}">
               <i class="icon ion-md-clipboard"></i>
               <p>Dashboard</p>
               <span class="badge badge-count">5</span>
@@ -52,26 +52,16 @@
             <h4 class="text-section">Components</h4>
           </li>
           <li class="nav-item">
-            <a data-toggle="collapse" href="#base">
-                <i class="icon ion-logo-buffer"></i>
-              <p>Base</p>
-              <span class="caret"></span>
+            <a href="<?= base_url('pengaju/create') ?>">
+              <i class="icon ion-md-calendar"></i>
+              <p>Pengajuan</p>
+              <span class="badge badge-count badge-info">1</span>
             </a>
-            <div class="collapse" id="base">
-              <ul class="nav nav-collapse">
-                <li>
-                  <a href="demo-ready-pro-bootstrap/livepreview/examples/components/buttons.html">
-                    <span class="sub-item">Buttons</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
           </li>
           <li class="nav-item">
             <a href="#">
               <i class="icon ion-md-calendar"></i>
-              <p>Calendar</p>
-              <span class="badge badge-count badge-info">1</span>
+              <p>Anggota</p>
             </a>
           </li>
           <li class="nav-section">
