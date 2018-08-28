@@ -42,26 +42,30 @@
           <a href="{{ base_url('pengaju') }}">
               <i class="icon ion-md-clipboard"></i>
               <p>Dashboard</p>
-              <span class="badge badge-count">5</span>
             </a>
           </li>
           <li class="nav-section">
             <span class="sidebar-mini-icon">
               <i class="la la-ellipsis-h"></i>
             </span>
-            <h4 class="text-section">Components</h4>
+            <h4 class="text-section">Menu</h4>
           </li>
           <li class="nav-item">
             <a href="<?= base_url('pengaju/create') ?>">
               <i class="icon ion-md-calendar"></i>
               <p>Pengajuan</p>
-              <span class="badge badge-count badge-info">1</span>
             </a>
           </li>
           <li class="nav-item">
             <a href="#">
               <i class="icon ion-md-calendar"></i>
               <p>Anggota</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="<?= base_url('berkas') ?>">
+              <i class="icon ion-md-calendar"></i>
+              <p>Berkas</p>
             </a>
           </li>
           <li class="nav-section">

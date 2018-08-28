@@ -26,7 +26,7 @@
                     @foreach($pengajuan_pkl as $data)
                     <tr>
                         <td>{{ $no++ }}</td>
-                        <td>{{ $data->detailPengaju->nama_pengaju }}</td>
+                        <td>{{ $data }}</td>
                         <td> @if($data->status_kesbangpol == 0)
                           {{'Belum'}}
                         @elseif ($data->status_kesbangpol == 1)
