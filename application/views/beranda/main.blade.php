@@ -29,11 +29,11 @@
                                 <div class="navbar-collapse collapse">
                                     <ul class="nav navbar-nav">
                                         <li class="menuItem active"><a href="#wrapper">Beranda</a></li>
-                                        <li class="menuItem"><a href="#aboutus">Tentang</a></li>
+                                        <li class="menuItem"><a href="#aboutus">Tentang</a><li>
                                         <li class="menuItem"><a href="#specialties">Contact</a></li>
                                         <li class="menuItem"><a href="#gallery">Dinas</a></li>
                                         <li class="menuItem"><a href="#feedback">Login</a></li>
-                                        <li class="menuItem"><a href="#contact">Saran</a></li>
+                                        <li class="menuItem"><a href="#contact">Sarang</a></li>
                                     </ul>
                                 </div>
                             </div>
