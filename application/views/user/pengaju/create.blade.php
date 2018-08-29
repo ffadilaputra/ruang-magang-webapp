@@ -14,8 +14,7 @@
                   </div>
                   <?= form_open('pengaju/store') ?>
                  <div class="card-body">
-
-                        <input name="id_user" type="hidden" value="{{ $user['id_user'] }}">
+                    <input name="id_user" type="hidden" value="{{ $user['id_user'] }}">
                       <div class="form-group">
                         <label for="dinas">Nama Lengkap</label>
                         <input type="text" name="nama_pengaju" class="form-control" placeholder="Nama Lengkap">
