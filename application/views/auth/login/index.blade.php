@@ -48,7 +48,7 @@
 
     <div class="container container-signup animated fadeIn" style="display: none;">
       <h3 class="text-center">Sign Up</h3>
-      <?= form_open('register') ?>
+      <?= form_open('ususer/register') ?>
       <div class="login-form">
         <div class="form-group form-floating-label">
           <input id="nama" name="nama" type="text" class="form-control input-border-bottom" required="">

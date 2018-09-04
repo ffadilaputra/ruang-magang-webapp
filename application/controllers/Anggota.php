@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class AnggotaMagang extends MY_Controller {
+class Anggota extends MY_Controller {
 
   public function __construct()
   {
@@ -11,12 +11,12 @@ class AnggotaMagang extends MY_Controller {
   }
 
   public function index(){
-        $data['anggotamagang'] = Anggota_model::all();
-        $this->view('admin.dinas.anggotamagang.index',$data);
+        $data[' '] = Anggota_model::all();
+        $this->view('user.anggotamagang.index',$data);
   }
 
   public function create(){
-        $this->view('admin.dinas.anggotamagang.create');
+        $this->view('user.anggotamagang.create');
   }
 
   public function store(){
@@ -33,7 +33,7 @@ class AnggotaMagang extends MY_Controller {
 
   public function edit($id= NULL){
     $data['anggotamagang'] = Anggota_model::find($id);
-    $this->view('admin.dinas.anggotamagang.edit',$data);
+    $this->view('user.anggotamagang.edit',$data);
   }
 
   public function update($id){

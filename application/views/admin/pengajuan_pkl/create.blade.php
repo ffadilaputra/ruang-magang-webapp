@@ -12,8 +12,8 @@
                   <div class="card-header">
                     <div class="card-title">Form Pengajuan PKL</div>
                   </div>
-                  <form action="{{ base_url('pengajuan_pkl/store') }}" method="post" enctype="multipart/form-data">
-                  <div class="card-body">
+                  <?= form_open('pengajuan_pkl/store') ?>
+                    <div class="card-body">
                     <div class="form-group">
                       <label for="pengajuan_pkl">Id Pengaju</label>
                       <input name="id_pengaju" type="text" class="form-control" placeholder="Id Pengaju">

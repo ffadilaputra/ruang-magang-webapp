@@ -12,8 +12,8 @@
                   <div class="card-header">
                     <div class="card-title">Form Sub Bidang Dinas</div>
                   </div>
-                  <form action="{{ base_url('subdinas/store') }}" method="post" enctype="multipart/form-data">
-                  <div class="card-body">
+                  <?= form_open('subdinas/store') ?>
+                    <div class="card-body">
                     <div class="form-group">
                       <label for="dinas">Nama Dinas</label>
                       <select class="form-control" name="nama_dinas" id="">

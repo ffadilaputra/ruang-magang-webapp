@@ -30,9 +30,7 @@ class Pengaju extends MY_Controller {
         //   'jml_pengaju' => 'required|string',
         // ]);
         Pengaju_model::create($this->input->post());
-        //$data = array('id_pengaju' => $this->input->post('id_user'));
-        //Pengajuan_model::create($data);
-        var_dump($_POST);
+        redirect('pengaju');
       }
 
 

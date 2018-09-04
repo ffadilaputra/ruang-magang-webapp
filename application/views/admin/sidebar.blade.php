@@ -10,8 +10,8 @@
 				<div class="info">
 					<a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
 						<span>
-							Hizrian
-							<span class="user-level">Administrator</span>
+							{{ $admin['nama'] }}
+							<span class="user-level">Admin</span>
 							<span class="caret"></span>
 						</span>
 					</a>
@@ -42,7 +42,6 @@
 					<a href="#">
             <i class="icon ion-md-clipboard"></i>
 						<p>Dashboard</p>
-						<span class="badge badge-count">5</span>
 					</a>
 				</li>
 				<li class="nav-section">
@@ -100,38 +99,6 @@
 						</ul>
 					</div>
 				</li>
-
-				<li class="nav-item">
-					<a data-toggle="collapse" href="#basemagang">
-              <i class="icon ion-logo-buffer"></i>
-						<p>Magang</p>
-						<span class="caret"></span>
-					</a>
-					<div class="collapse" id="basemagang">
-						<ul class="nav nav-collapse">
-							<li>
-								<a href="{{base_url('AnggotaMagang')}}">
-									<span class="sub-item">Anggota</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</li>
-
-
-
-
-				<li class="nav-item">
-					<a href="#">
-						<i class="icon ion-md-calendar"></i>
-						<p>Calendar</p>
-						<span class="badge badge-count badge-info">1</span>
-					</a>
-				</li>
-				<li class="nav-section">
-					<span class="sidebar-mini-icon">
-						<i class="la la-ellipsis-h"></i>
-					</span>
 			</ul>
 		</div>
 	</div>

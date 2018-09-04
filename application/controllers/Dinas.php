@@ -11,12 +11,14 @@ class Dinas extends MY_Controller {
   }
 
   public function index(){
+        $data['admin'] = $this->session->userdata('dinas');
         $data['dinas'] = Dinas_model::all();
         $this->view('admin.dinas.index',$data);
   }
 
   public function create(){
-        $this->view('admin.dinas.create');
+        $data['admin'] = $this->session->userdata('dinas');
+        $this->view('admin.dinas.create',$data);
   }
 
   public function store(){
@@ -30,6 +32,7 @@ class Dinas extends MY_Controller {
   }
 
   public function edit($id= NULL){
+    $data['admin'] = $this->session->userdata('logged_in');
     $data['dinas'] = Dinas_model::find($id);
     $this->view('admin.dinas.edit',$data);
   }

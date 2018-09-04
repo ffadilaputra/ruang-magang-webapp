@@ -14,7 +14,7 @@
                     <div class="card-body">
                       <p class="fw-mediumbold mt-1">Nama Pengguna</p>
                     <h4 class="text-primary"><b>{{ $user['nama'] }}</b></h4>
-                      <a href="#" class="btn btn-primary btn-full text-left mt-3 mb-3"><i class="la la-plus"></i> Add Balance</a>
+                      <a href="#" class="btn btn-primary btn-full text-left mt-3 mb-3"><i class="la la-plus"></i> Berkas</a>
                     </div>
                     <div class="card-footer mt-auto">
                       <ul class="nav">
@@ -40,8 +40,8 @@
                         </div>
                         <div class="col-7 col-stats">
                           <div class="numbers">
-                            <p class="card-category">Number</p>
-                            <h4 class="card-title">150GB</h4>
+                            <p class="card-category">Berkas</p>
+                            <h4 class="card-title">Proposal Pengajuan maganng</h4>
                           </div>
                         </div>
                       </div>
@@ -54,8 +54,8 @@
                         </div>
                         <div class="col-7 col-stats">
                           <div class="numbers">
-                            <p class="card-category">Followers</p>
-                            <h4 class="card-title">+45K</h4>
+                            <p class="card-category">Berkas</p>
+                            <h4 class="card-title">Berkas Mahasiswa aktif</h4>
                           </div>
                         </div>
                       </div>

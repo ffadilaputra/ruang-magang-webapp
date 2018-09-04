@@ -12,8 +12,8 @@
                   <div class="card-header">
                     <div class="card-title">Form user Dinas</div>
                   </div>
-                  <form action="{{ base_url('Usdinas/store') }}" method="post" enctype="multipart/form-data">
-                  <div class="card-body">
+                  <?= form_open('usdinas/store')?>
+                    <div class="card-body">
                     <div class="form-group">
                       <label for="dinas">Username</label>
                       <input name="nama" type="text" class="form-control" placeholder="Masukkan Username">
