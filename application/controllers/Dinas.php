@@ -11,12 +11,14 @@ class Dinas extends MY_Controller {
   }
 
   public function index(){
+        $this->authenticate();
         $data['admin'] = $this->session->userdata('dinas');
         $data['dinas'] = Dinas_model::all();
         $this->view('admin.dinas.index',$data);
   }
 
   public function create(){
+        $this->authenticate();
         $data['admin'] = $this->session->userdata('dinas');
         $this->view('admin.dinas.create',$data);
   }
@@ -32,6 +34,7 @@ class Dinas extends MY_Controller {
   }
 
   public function edit($id= NULL){
+    $this->authenticate();
     $data['admin'] = $this->session->userdata('logged_in');
     $data['dinas'] = Dinas_model::find($id);
     $this->view('admin.dinas.edit',$data);
@@ -83,10 +86,9 @@ class Dinas extends MY_Controller {
 		}
   }
 
-  public function logoutProcess() {
-    $this->session->unset_userdata('dinas');
-		$this->session->sess_destroy();
-		redirect('beranda','refresh');
-}
-
+    public function logoutProcess() {
+      $this->session->unset_userdata('dinas');
+      $this->session->sess_destroy();
+      redirect('beranda','refresh');
+  }
 }
