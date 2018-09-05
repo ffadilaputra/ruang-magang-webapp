@@ -57,7 +57,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#">
+            <a href="<?= base_url('anggota') ?> ">
               <i class="icon ion-md-calendar"></i>
               <p>Anggota</p>
             </a>

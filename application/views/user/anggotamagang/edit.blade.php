@@ -1,4 +1,4 @@
-@extends('admin.template')
+@extends('user.template')
 
 @section('content')
     <div class="content">
@@ -41,7 +41,7 @@
                       @endif
                     </div>
 
-                 
+
                   </div>
                   <div class="card-action">
                     <button class="btn btn-success">Submit</button>

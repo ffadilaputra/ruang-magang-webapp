@@ -40,7 +40,10 @@ class Login extends MY_Controller {
 			}
 			return true;
 		}else{
-			$this->form_validation->set_message('cekDb','Login Gagal');
+      $validation = $this->validator->make([], []);
+      $validation->errors()->add('password', 'the password is invalid');
+      $this->session->set_flashdata('errors', $validation->errors());
+			//$this->form_validation->set_message('cekDb','Login Gagal');
 			return false;
 		}
   }

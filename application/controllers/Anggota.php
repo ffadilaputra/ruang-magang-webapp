@@ -11,7 +11,7 @@ class Anggota extends MY_Controller {
   }
 
   public function index(){
-        $data[' '] = Anggota_model::all();
+        $data['anggotamagang'] = Anggota_model::all();
         $this->view('user.anggotamagang.index',$data);
   }
 
