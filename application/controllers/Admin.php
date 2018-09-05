@@ -8,10 +8,7 @@ class Admin extends MY_Controller {
     parent::__construct();
     $this->load->model('Admin_model');
     $this->load->model('Login_model');
-  }
-
-  public function tes(){
-    var_dump($_SESSION);
+    $this->authenticate();
   }
 
   public function index(){

@@ -5,6 +5,10 @@
 <div class="wrapper wrapper-login">
     <div class="container container-login animated fadeIn" style="display: block;">
       <h3 class="text-center">Signup</h3>
+      @php
+        $CI = &get_instance();
+        echo $CI->session->flashdata("msg");
+      @endphp
       <?= form_open('login/process') ?>
       <div class="login-form">
         <div class="form-group form-floating-label">
@@ -48,7 +52,7 @@
 
     <div class="container container-signup animated fadeIn" style="display: none;">
       <h3 class="text-center">Sign Up</h3>
-      <?= form_open('ususer/register') ?>
+      <?= form_open('Ususer/register') ?>
       <div class="login-form">
         <div class="form-group form-floating-label">
           <input id="nama" name="nama" type="text" class="form-control input-border-bottom" required="">
@@ -90,7 +94,7 @@
           </div>
         </div>
         <div class="form-action">
-          <a href="#" id="show-signin" class="btn btn-danger btn-rounded btn-login mr-3">Cancel</a>
+          <input type="reset" class="btn btn-danger btn-rounded btn-login mr-3">
           <input type="submit"class="btn btn-primary btn-rounded btn-login">
         </div>
       </div>

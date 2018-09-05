@@ -5,6 +5,17 @@
         <link rel="stylesheet" type="text/css" href="<?= base_url('assets/backend/css/demo.css') ?>">
         <link rel="stylesheet" type="text/css" href="<?= base_url('assets/backend/css/fonts.css') ?>">
         <link rel="stylesheet" type="text/css" href="<?= base_url('assets/backend/css/ready.min.css') ?>">
+        <script src="<?= base_url() ?>assets/backend/js/webfont.min.js"></script>
+        <script>
+            WebFont.load({
+              google: {"families":["Montserrat:100,200,300,400,500,600,700,800,900"]},
+              custom: {"families":["Flaticon", "LineAwesome"], urls: ['assets/backend/css/fonts.css']},
+              active: function() {
+                sessionStorage.fonts = true;
+              }
+            });
+          </script>
+
         <link href="https://unpkg.com/ionicons@4.3.0/dist/css/ionicons.min.css" rel="stylesheet">
     </head>
     <body>

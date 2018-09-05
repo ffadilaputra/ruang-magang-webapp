@@ -28,42 +28,45 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-3 mt-3 mb-3">
-                  <div class="card card-stats">
-                    <div class="card-body">
-                      <p class="fw-mediumbold mt-1">Data Berkas yang dibutuhkan</p>
-                      <div class="row">
-                        <div class="col-5">
-                          <div class="icon-big text-center icon-warning">
-                            <i class="">D</i>
+                <div class="col-sm-7 col-md-3">
+                    <div class="card card-stats card-round">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-5">
+                            <div class="icon-big text-center">
+                                <i class="flaticon-error text-danger"></i>
+                            </div>
                           </div>
-                        </div>
-                        <div class="col-7 col-stats">
-                          <div class="numbers">
-                            <p class="card-category">Berkas</p>
-                            <h4 class="card-title">Proposal Pengajuan maganng</h4>
+                          <div class="col-8">
+                            <div class="numbers">
+                              <p class="card-category">Verifikasi</p>
+                              <h4 class="card-title">Kesbangpol</h4>
+                            </div>
                           </div>
                         </div>
                       </div>
-                      <hr>
+                    </div>
+              </div>
+              <div class="col-sm-5 col-md-3">
+                  <div class="card card-stats card-round">
+                    <div class="card-body">
                       <div class="row">
                         <div class="col-5">
-                          <div class="icon-big text-center icon-warning">
-                            <i class="">D</i>
+                          <div class="icon-big text-center">
+                            <i class="flaticon-error text-danger"></i>
                           </div>
                         </div>
                         <div class="col-7 col-stats">
                           <div class="numbers">
-                            <p class="card-category">Berkas</p>
-                            <h4 class="card-title">Berkas Mahasiswa aktif</h4>
+                            <p class="card-category">Verifikasi</p>
+                            <h4 class="card-title">Dinas</h4>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-						</div>
+            </div>
 					</div>
       </div>
     </div>

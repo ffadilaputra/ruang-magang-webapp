@@ -7,6 +7,7 @@
           <h4 class="page-title">Halaman Dinas</h4>
         </div>
         <div class="row">
+
           <div class="col-sm-8">
               <div class="card">
                   <div class="card-header">

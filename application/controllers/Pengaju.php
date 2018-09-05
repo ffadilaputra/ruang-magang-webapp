@@ -10,6 +10,7 @@ class Pengaju extends MY_Controller {
         $this->load->model('Pengaju_model');
         $this->load->model('Pengajuan_model');
         $this->load->model('Subdinas_model');
+        $this->load->model('Ususer_model');
         $this->authenticateUser();
       }
 
@@ -22,8 +23,14 @@ class Pengaju extends MY_Controller {
         $data['dinas'] = Dinas_model::all();
         $data['user']  = $this->session->userdata('logged_in');
         $data['sub']   = Subdinas_model::all();
-        $this->view('user.pengaju.create',$data);
-      }
+
+        $cek = Pengaju_model::where('id_user',$data['user']['id_user'])->first();
+          if($cek == TRUE){
+            echo 'Sudah Submit Berkas';
+          }else{
+            $this->view('user.pengaju.create',$data);
+          }
+        }
 
       public function store(){
         // $this->validate($this->input->post(), [
