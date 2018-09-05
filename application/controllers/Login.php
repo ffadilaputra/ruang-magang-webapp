@@ -8,6 +8,7 @@ class Login extends MY_Controller {
   }
 
   public function index(){
+      $this->redirectIfAuthenticated('logged_in');
       $this->view('auth.login.index');
   }
 

@@ -140,4 +140,11 @@ class MY_Controller extends CI_Controller {
     }
   }
 
+  protected function authenticateUser(){
+    if($this->session->userdata('logged_in')){
+    }else if(is_null($this->session->userdata('logged_in'))){
+      redirect(base_url('login'));
+    }
+  }
+
 }

@@ -9,7 +9,7 @@ class Pengajuan extends MY_Controller {
     parent::__construct();
     $this->load->model('Pengaju_model');
     $this->load->model('Pengajuan_model');
-    $this->authenticate();
+    $this->authenticateUser();
   }
 
   public function index(){
