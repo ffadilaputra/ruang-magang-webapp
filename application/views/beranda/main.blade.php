@@ -13,7 +13,7 @@
                     <a href="#"><img id="site-title" class=" wow fadeInDown" wow-data-delay="0.0s" wow-data-duration="0.9s" src="<?php base_url(); ?>assets/ruang-magang-website/img/logo-kota.png" alt="logo"/></a>
 
                     <h4 class="intro wow zoomIn" wow-data-delay="0.4s" wow-data-duration="0.9s" style="font-family: 'PT Sans Narrow', sans-serif;">Ruang magang</h4>
-                    <h2 class="intro wow zoomIn" wow-data-delay="0.4s" wow-data-duration="0.9s">Pemerintah Kota Wisata Batu</h2>
+                    <h2 class="intro wow zoomIn" wow-data-delay="0.4s" wow-data-duration="0.9s" style="font-family: 'PT Sans Narrow', sans-serif;">Pemerintah Kota Wisata Batu</h2>
                       
                 </div>
             </div>
@@ -33,7 +33,7 @@
                                         <li class="menuItem"><a href="#specialties">Contact</a></li>
                                         <li class="menuItem"><a href="#gallery">Dinas</a></li>
                                         <li class="menuItem"><a href="#feedback">Login</a></li>
-                                        <li class="menuItem"><a href="#contact">Sarang</a></li>
+                                        <li class="menuItem"><a href="#contact">Saran</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -88,98 +88,9 @@ Ditunjang Oleh Pendidikan Yang Tepatguna dan Berdaya Saing Ditopang  Sumberdaya 
              <img class="dividerline" src="<?php base_url(); ?>assets/ruang-magang-website/img/sep.png" alt="">
             <h2 style="font-family: 'PT Sans Narrow', sans-serif;">Our Specialties</h2>
            <img class="dividerline" src="<?php base_url(); ?>assets/ruang-magang-website/img/sep.png" alt="">
-            <h3 style="font-family: 'Roboto', sans-serif;">Have you ever felt worried that your party will not raise up to your guest expectations? In design, vertical rhythm is the structure that guides a reader's eye through the content. Good vertical rhythm makes a layout more balanced and beautiful and its content more readable. The time signature in sheet music visually depicts a song's rhythm, while for us, the lines of the baseline grid depict the rhythm of our content and give us guidelines.</h3>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="restmenuwrap">
-                    <h3 class="maincat notopmarg text-center">APPETIZERS</h3>
-                    <div class="restitem clearfix">
-                        <div class="rm-thumb" style="background-image: url(http://wowthemes.net/demo/leroy/img/dummies/1.jpg)">
-                        </div>
-                        <h5>Sweet, Sticky and Spicy Chicken</h5>
-                        <p>
-                            Pepperoni, mozzarella cheese and Italian seasonings are rolled together, baked to delicious perfection, then cut into bite-sized delights. Your guests will beg for the recipe!"
-                        </p>
-                    </div>
-                    <div class="restitem clearfix">
-                        <div class="rm-thumb" style="background-image: url(http://wowthemes.net/demo/leroy/img/dummies/2.jpg)">
-                        </div>
-                        <h5>Luxur Oyster</h5>
-                        <p>
-                            Pepperoni, mozzarella cheese and Italian seasonings are rolled together, baked to delicious perfection, then cut into bite-sized delights. Your guests will beg for the recipe!"
-                        </p>
-                    </div>
-                    <div class="restitem clearfix">
-                        <div class="rm-thumb" style="background-image: url(http://wowthemes.net/demo/leroy/img/dummies/3.jpg)">
-                        </div>
-                        <h5>Sweet, Sticky and Spicy Chicken</h5>
-                        <p>
-                            Pepperoni, mozzarella cheese and Italian seasonings are rolled together, baked to delicious perfection, then cut into bite-sized delights. Your guests will beg for the recipe!"
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="restmenuwrap">
-                    <h3 class="maincat notopmarg text-center">MAIN</h3>
-                    <div class="restitem clearfix">
-                        <div class="rm-thumb" style="background-image: url(http://wowthemes.net/demo/leroy/img/dummies/4.jpg)">
-                        </div>
-                        <h5>Sweet, Sticky and Spicy Chicken</h5>
-                        <p>
-                            Pepperoni, mozzarella cheese and Italian seasonings are rolled together, baked to delicious perfection, then cut into bite-sized delights. Your guests will beg for the recipe!"
-                        </p>
-                    </div>
-                    <div class="restitem clearfix">
-                        <div class="rm-thumb" style="background-image: url(http://wowthemes.net/demo/leroy/img/dummies/5.jpg)">
-                        </div>
-                        <h5>Luxur Oyster</h5>
-                        <p>
-                            Pepperoni, mozzarella cheese and Italian seasonings are rolled together, baked to delicious perfection, then cut into bite-sized delights. Your guests will beg for the recipe!"
-                        </p>
-                    </div>
-                    <div class="restitem clearfix">
-                        <div class="rm-thumb" style="background-image: url(http://wowthemes.net/demo/leroy/img/dummies/6.jpg)">
-                        </div>
-                        <h5>Sweet, Sticky and Spicy Chicken</h5>
-                        <p>
-                            Pepperoni, mozzarella cheese and Italian seasonings are rolled together, baked to delicious perfection, then cut into bite-sized delights. Your guests will beg for the recipe!"
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="restmenuwrap">
-                    <h3 class="maincat notopmarg text-center">DESSERTS</h3>
-                    <div class="restitem clearfix">
-                        <div class="rm-thumb" style="background-image: url(http://wowthemes.net/demo/leroy/img/dummies/7.jpg)">
-                        </div>
-                        <h5>Sweet, Sticky and Spicy Chicken</h5>
-                        <p>
-                            Pepperoni, mozzarella cheese and Italian seasonings are rolled together, baked to delicious perfection, then cut into bite-sized delights. Your guests will beg for the recipe!"
-                        </p>
-                    </div>
-                    <div class="restitem clearfix">
-                        <div class="rm-thumb" style="background-image: url(http://wowthemes.net/demo/leroy/img/dummies/8.jpg)">
-                        </div>
-                        <h5>Luxur Oyster</h5>
-                        <p>
-                            Pepperoni, mozzarella cheese and Italian seasonings are rolled together, baked to delicious perfection, then cut into bite-sized delights. Your guests will beg for the recipe!"
-                        </p>
-                    </div>
-                    <div class="restitem clearfix">
-                        <div class="rm-thumb" style="background-image: url(http://wowthemes.net/demo/leroy/img/dummies/9.jpg)">
-                        </div>
-                        <h5>Sweet, Sticky and Spicy Chicken</h5>
-                        <p>
-                            Pepperoni, mozzarella cheese and Italian seasonings are rolled together, baked to delicious perfection, then cut into bite-sized delights. Your guests will beg for the recipe!"
-                        </p>
-                    </div>
-                </div>
+        
             </div>
         </div>
-    </div>
     </section>
     
     <!--gallery-->
@@ -476,7 +387,7 @@ Ditunjang Oleh Pendidikan Yang Tepatguna dan Berdaya Saing Ditopang  Sumberdaya 
        <div class="row">
             <div class="col-md-12">
                 <div class="papers text-center">
-                    <img src="http://wowthemes.net/demo/leroy/img/dummies/18.jpg" alt=""><br/>
+                    <img  src="<?php base_url(); ?>assets/ruang-magang-website/img/logo2.png" alt=""><br/>
                     <h4 class="notopmarg nobotmarg">Login User</h4>
           <form method="post" action="contact.php" id="contactform">
           <input name="name" type="text" class="contact col-md-6" placeholder="Your Name *" >
@@ -497,8 +408,8 @@ Ditunjang Oleh Pendidikan Yang Tepatguna dan Berdaya Saing Ditopang  Sumberdaya 
                 <img class="dividerline" src="<?php base_url(); ?>assets/ruang-magang-website/img/sep.png" alt="">
                 <h2 style="font-family: 'Roboto', sans-serif;">Kontak Saran</h2>
                 <img class="dividerline" src="<?php base_url(); ?>assets/ruang-magang-website/img/sep.png" alt="">
-                <h3 style="font-family: 'Roboto', sans-serif;">Phasellus non dolor nibh. Nullam elementum tellus pretium feugiat.<br>
-                 Cras dictum tellus dui, vitae sollicitudin ipsum tincidunt in. Sed tincidunt tristique enim sed sollcitudin.</h3>
+                <h3 style="font-family: 'Roboto', sans-serif;">Kirim Kritik dan Saran anda tentang Aplikasi Ruang Magang Ini.<br>
+                </h3>
         </div>
     </div>
      <div class="container w960">
