@@ -8,7 +8,6 @@ class Admin extends MY_Controller {
     parent::__construct();
     $this->load->model('Admin_model');
     $this->load->model('Login_model');
-
   }
 
   public function tes(){
@@ -16,12 +15,14 @@ class Admin extends MY_Controller {
   }
 
   public function index(){
+        $data['admin'] = $this->session->userdata('dinas');
         $data['Admin'] = Admin_model::all();
         $this->view('admin.dinas.us_admin.index',$data);
   }
 
   public function create(){
-        $this->view('admin.dinas.us_admin.create');
+        $data['admin'] = $this->session->userdata('dinas');
+        $this->view('admin.dinas.us_admin.create',$data);
   }
 
   public function store(){
@@ -37,6 +38,7 @@ class Admin extends MY_Controller {
   }
 
   public function edit($id= NULL){
+    $data['admin'] = $this->session->userdata('dinas');
     $data['Admin'] = Admin_model::find($id);
     $this->view('admin.dinas.us_admin.edit',$data);
   }

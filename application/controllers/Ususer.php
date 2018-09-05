@@ -7,15 +7,18 @@ class Ususer extends MY_Controller {
   public function __construct(){
     parent::__construct();
     $this->load->model('Ususer_model');
+    $this->authenticate();
   }
 
   public function index(){
+        $data['admin'] = $this->session->userdata('dinas');
         $data['ususer'] = Ususer_model::all();
         $this->view('admin.dinas.us_user.index',$data);
   }
 
   public function create(){
-        $this->view('admin.dinas.us_user.create');
+        $data['admin'] = $this->session->userdata('dinas');
+        $this->view('admin.dinas.us_user.create',$data);
   }
 
   public function store(){
@@ -43,6 +46,7 @@ class Ususer extends MY_Controller {
   }
 
   public function edit($id= NULL){
+    $data['admin'] = $this->session->userdata('dinas');
     $data['ususer'] = Ususer_model::find($id);
     $this->view('admin.dinas.us_user.edit',$data);
   }

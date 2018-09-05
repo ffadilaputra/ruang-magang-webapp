@@ -10,6 +10,7 @@ class Pengaju extends MY_Controller {
         $this->load->model('Pengaju_model');
         $this->load->model('Pengajuan_model');
         $this->load->model('Subdinas_model');
+        $this->authenticate();
       }
 
       public function dashboard(){

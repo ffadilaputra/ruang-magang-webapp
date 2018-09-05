@@ -8,15 +8,18 @@ class Usdinas extends MY_Controller {
   {
     parent::__construct();
     $this->load->model('Usdinas_model');
+    $this->authenticate();
   }
 
   public function index(){
+        $data['admin'] = $this->session->userdata('dinas');
         $data['usdinas'] = Usdinas_model::all();
         $this->view('admin.dinas.us_dinas.index',$data);
   }
 
   public function create(){
-        $this->view('admin.dinas.us_dinas.create');
+        $data['admin'] = $this->session->userdata('dinas');
+        $this->view('admin.dinas.us_dinas.create',$data);
   }
 
   public function store(){
@@ -32,6 +35,7 @@ class Usdinas extends MY_Controller {
   }
 
   public function edit($id= NULL){
+    $data['admin'] = $this->session->userdata('dinas');
     $data['usdinas'] = Usdinas_model::find($id);
     $this->view('admin.dinas.us_dinas.edit',$data);
   }

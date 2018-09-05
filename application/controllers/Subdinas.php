@@ -4,19 +4,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Subdinas extends MY_Controller {
 
-  public function __construct()
-  {
+  public function __construct(){
     parent::__construct();
     $this->load->model('Dinas_model');
     $this->load->model('Subdinas_model');
+    $this->authenticate();
   }
 
   public function index(){
+        $data['admin'] = $this->session->userdata('dinas');
         $data['subdinas'] = Subdinas_model::all();
         $this->view('admin.dinas.subdinas.index',$data);
   }
 
   public function create(){
+        $data['admin'] = $this->session->userdata('dinas');
         $data['dinas'] = Dinas_model::all();
         $this->view('admin.dinas.subdinas.create',$data);
   }
@@ -34,6 +36,7 @@ class Subdinas extends MY_Controller {
   }
 
   public function edit($id= NULL){
+    $data['admin'] = $this->session->userdata('dinas');
     $data['subdinas'] = Subdinas_model::find($id);
     $this->view('admin.dinas.subdinas.edit',$data);
   }
