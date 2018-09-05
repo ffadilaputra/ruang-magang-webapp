@@ -1,37 +1,21 @@
-@include('beranda.header')
 
-    @section('content')
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Logo </a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Sign</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Signup</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+   @include('beranda.header')
+<body>
+<!--wrapper start-->
+<div class="wrapper" id="wrapper">
 
-    <header class="masthead">
-      <div class="container h-100">
-        <div class="row h-100">
-          <div class="col-lg-7 my-auto">
-            <div class="header-content mx-auto">
-            <h1 class="mb-5">{{ $user['email'] }}</h1>
-              <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Start Now for Free!</a>
+    <!--header-->
+    <header>
+    <div class="banner row" id="banner">
+        <div class="parallax text-center" style="background-image: url(assets/ruang-magang-website/img/among-tani.jpg);">
+            <div class="parallax-pattern-overlay">
+                <div class="container text-center" style="height:600px;padding-top:170px;">
+                    <a href="#"><img id="site-title" class=" wow fadeInDown" wow-data-delay="0.0s" wow-data-duration="0.9s" src="<?php base_url(); ?>assets/ruang-magang-website/img/logo-kota.png" alt="logo"/></a>
+
+                    <h4 class="intro wow zoomIn" wow-data-delay="0.4s" wow-data-duration="0.9s" style="font-family: 'PT Sans Narrow', sans-serif;">Ruang magang</h4>
+                    <h2 class="intro wow zoomIn" wow-data-delay="0.4s" wow-data-duration="0.9s" style="font-family: 'PT Sans Narrow', sans-serif;">Pemerintah Kota Wisata Batu</h2>
+
+                </div>
             </div>
         </div>
     </div>
@@ -49,7 +33,7 @@
                                         <li class="menuItem"><a href="#specialties">Contact</a></li>
                                         <li class="menuItem"><a href="#gallery">Dinas</a></li>
                                         <li class="menuItem"><a href="#feedback">Login</a></li>
-                                        <li class="menuItem"><a href="#contact">Sarang</a></li>
+                                        <li class="menuItem"><a href="#contact">Saran</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -103,6 +87,7 @@ Ditunjang Oleh Pendidikan Yang Tepatguna dan Berdaya Saing Ditopang  Sumberdaya 
         <div class="heading text-center">
              <img class="dividerline" src="<?= base_url(); ?>assets/ruang-magang-website/img/sep.png" alt="">
             <h2 style="font-family: 'PT Sans Narrow', sans-serif;">Our Specialties</h2>
+<<<<<<< HEAD
            <img class="dividerline" src="<?= base_url(); ?>assets/ruang-magang-website/img/sep.png" alt="">
             <h3 style="font-family: 'Roboto', sans-serif;">Have you ever felt worried that your party will not raise up to your guest expectations? In design, vertical rhythm is the structure that guides a reader's eye through the content. Good vertical rhythm makes a layout more balanced and beautiful and its content more readable. The time signature in sheet music visually depicts a song's rhythm, while for us, the lines of the baseline grid depict the rhythm of our content and give us guidelines.</h3>
         </div>
@@ -193,9 +178,12 @@ Ditunjang Oleh Pendidikan Yang Tepatguna dan Berdaya Saing Ditopang  Sumberdaya 
                         </p>
                     </div>
                 </div>
+=======
+           <img class="dividerline" src="<?php base_url(); ?>assets/ruang-magang-website/img/sep.png" alt="">
+
+>>>>>>> origin/frontend-dashboard
             </div>
         </div>
-    </div>
     </section>
 
     <!--gallery-->
@@ -492,7 +480,7 @@ Ditunjang Oleh Pendidikan Yang Tepatguna dan Berdaya Saing Ditopang  Sumberdaya 
        <div class="row">
             <div class="col-md-12">
                 <div class="papers text-center">
-                    <img src="http://wowthemes.net/demo/leroy/img/dummies/18.jpg" alt=""><br/>
+                    <img  src="<?php base_url(); ?>assets/ruang-magang-website/img/logo2.png" alt=""><br/>
                     <h4 class="notopmarg nobotmarg">Login User</h4>
           <form method="post" action="contact.php" id="contactform">
           <input name="name" type="text" class="contact col-md-6" placeholder="Your Name *" >
@@ -512,9 +500,15 @@ Ditunjang Oleh Pendidikan Yang Tepatguna dan Berdaya Saing Ditopang  Sumberdaya 
         <div class="heading">
                 <img class="dividerline" src="<?= base_url(); ?>assets/ruang-magang-website/img/sep.png" alt="">
                 <h2 style="font-family: 'Roboto', sans-serif;">Kontak Saran</h2>
+<<<<<<< HEAD
                 <img class="dividerline" src="<?= base_url(); ?>assets/ruang-magang-website/img/sep.png" alt="">
                 <h3 style="font-family: 'Roboto', sans-serif;">Phasellus non dolor nibh. Nullam elementum tellus pretium feugiat.<br>
                  Cras dictum tellus dui, vitae sollicitudin ipsum tincidunt in. Sed tincidunt tristique enim sed sollcitudin.</h3>
+=======
+                <img class="dividerline" src="<?php base_url(); ?>assets/ruang-magang-website/img/sep.png" alt="">
+                <h3 style="font-family: 'Roboto', sans-serif;">Kirim Kritik dan Saran anda tentang Aplikasi Ruang Magang Ini.<br>
+                </h3>
+>>>>>>> origin/frontend-dashboard
         </div>
     </div>
      <div class="container w960">
