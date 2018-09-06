@@ -19,7 +19,7 @@
             </div>
         </div>
     </div>
-    <div class="menu">
+    <div class="menu" style="margin-bottom:21px;">
         <div class="navbar-wrapper">
             <div class="container">
                 <div class="navwrapper">
@@ -30,9 +30,9 @@
                                     <ul class="nav navbar-nav">
                                         <li class="menuItem active"><a href="#wrapper">Beranda</a></li>
                                         <li class="menuItem"><a href="#aboutus">Tentang</a><li>
-                                        <li class="menuItem"><a href="#specialties">Contact</a></li>
+                                       <!--  <li class="menuItem"><a href="#specialties">Contact</a></li> -->
                                         <li class="menuItem"><a href="#gallery">Dinas</a></li>
-                                        <li class="menuItem"><a href="#feedback">Login</a></li>
+                                        <li class="menuItem"><a href="<?= base_url('login') ?>">Login</a></li>
                                         <li class="menuItem"><a href="#contact">Saran</a></li>
                                     </ul>
                                 </div>
@@ -81,16 +81,16 @@ Ditunjang Oleh Pendidikan Yang Tepatguna dan Berdaya Saing Ditopang  Sumberdaya 
     </div>
     </section>
 
-    <!--specialties-->
-    <section class="specialties" id="specialties">
-    <div class="container">
-        <div class="heading text-center">
-             <img class="dividerline" src="<?= base_url(); ?>assets/ruang-magang-website/img/sep.png" alt="">
-            <h2 style="font-family: 'PT Sans Narrow', sans-serif;">Our Specialties</h2>
-           <img class="dividerline" src="<?php base_url(); ?>assets/ruang-magang-website/img/sep.png" alt="">
-            </div>
-        </div>
-    </section>
+  <!--   specialties
+  <section class="specialties" id="specialties">
+  <div class="container">
+      <div class="heading text-center">
+           <img class="dividerline" src="<?= base_url(); ?>assets/ruang-magang-website/img/sep.png" alt="">
+          <h2 style="font-family: 'PT Sans Narrow', sans-serif;">Our Specialties</h2>
+         <img class="dividerline" src="<?php base_url(); ?>assets/ruang-magang-website/img/sep.png" alt="">
+          </div>
+      </div>
+  </section> -->
 
     <!--gallery-->
     <section class="gallery" id="gallery">
@@ -375,30 +375,30 @@ Ditunjang Oleh Pendidikan Yang Tepatguna dan Berdaya Saing Ditopang  Sumberdaya 
     </section>
 
     <!--feedback-->
-    <section class="feedback" id="feedback">
-       <div class="heading text-center">
-            <img class="dividerline" src="<?= base_url(); ?>assets/ruang-magang-website/img/sep.png" alt="">
-            <h2 style="font-family: 'Roboto', sans-serif;">Login</h2>
-            <img class="dividerline" src="<?= base_url(); ?>assets/ruang-magang-website/img/sep.png" alt="">
-            <h3 style="font-family: 'Roboto', sans-serif;">Login User , Login Bangkesbangpol , Login Dinas</h3>
-        </div>
-
-       <div class="row">
-            <div class="col-md-12">
-                <div class="papers text-center">
-                    <img  src="<?php base_url(); ?>assets/ruang-magang-website/img/logo2.png" alt=""><br/>
-                    <h4 class="notopmarg nobotmarg">Login User</h4>
-          <form method="post" action="contact.php" id="contactform">
-          <input name="name" type="text" class="contact col-md-6" placeholder="Your Name *" >
-          <input name="email" type="password" class="contact noMarr col-md-6" placeholder="Password *" >
-
-          <input type="submit" id="submit" class="contact submit" value="Login">
-          </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    </section>
+  <!--   <section class="feedback" >
+     <div class="heading text-center">
+          <img class="dividerline" src="<?= base_url(); ?>assets/ruang-magang-website/img/sep.png" alt="">
+          <h2 style="font-family: 'Roboto', sans-serif;">Login</h2>
+          <img class="dividerline" src="<?= base_url(); ?>assets/ruang-magang-website/img/sep.png" alt="">
+          <h3 style="font-family: 'Roboto', sans-serif;">Login User , Login Bangkesbangpol , Login Dinas</h3>
+      </div>
+  
+     <div class="row">
+          <div class="col-md-12">
+              <div class="papers text-center">
+                  <img  src="<?php base_url(); ?>assets/ruang-magang-website/img/logo2.png" alt=""><br/>
+                  <h4 class="notopmarg nobotmarg">Login User</h4>
+        <form method="post" action="contact.php" id="contactform">
+        <input name="name" type="text" class="contact col-md-6" placeholder="Your Name *" >
+        <input name="email" type="password" class="contact noMarr col-md-6" placeholder="Password *" >
+  
+        <input type="submit" id="submit" class="contact submit" value="Login">
+        </form>
+              </div>
+          </div>
+      </div>
+  </div>
+  </section> -->
 
     <!--feedback-->
     <section class="contact" id="contact">
@@ -413,18 +413,30 @@ Ditunjang Oleh Pendidikan Yang Tepatguna dan Berdaya Saing Ditopang  Sumberdaya 
     </div>
      <div class="container w960">
       <div class="row">
-        <div class="done">
-            <div class="alert alert-success">
-                <button type="button" class="close" data-dismiss="alert">×</button>
-                Your message has been sent. Thank you!
-            </div>
-        </div>
-       <form method="post" action="contact.php" id="contactform">
-          <input name="name" type="text" class="contact col-md-6" placeholder="Your Name *" >
+        
+        <?= form_open('saran/create') ?>
+          <input name="nama" type="text" class="contact col-md-6" placeholder="Your Name *" >
+           {{-- Validasi Field --}}
+                      @if($errors->has('nama'))
+                        <small class="text-danger">{{ $errors->first('nama') }}</small>
+                      @endif
           <input name="email" type="email" class="contact noMarr col-md-6" placeholder="E-mail address *" >
-          <textarea name="comment" class="contact col-md-12" placeholder="Message *"></textarea>
-          <input type="submit" id="submit" class="contact submit" value="Send message">
+            {{-- Validasi Field --}}
+                      @if($errors->has('email'))
+                        <small class="text-danger">{{ $errors->first('email') }}</small>
+                      @endif
+          <textarea name="keterangan" class="contact col-md-12" placeholder="Message *"></textarea>
+          {{-- Validasi Field --}}
+                      @if($errors->has('keterangan'))
+                        <small class="text-danger">{{ $errors->first('keterangan') }}</small>
+                      @endif  
+            
+          <button class="btn btn-primary">Send Message</button>
+
         </form>
+        </div>
+
+
       </div>
     </div>
     </section>
