@@ -11,7 +11,7 @@ class Pengajuan_model extends Eloquent {
   public $timestamps = true;
 
   public function detailPengaju(){
-    return $this->belongsTo('Pengaju_model','id_pengaju');
+    return $this->belongsTo('Pengaju_model','id_pengaju','id_user');
   }
 }
 ?>

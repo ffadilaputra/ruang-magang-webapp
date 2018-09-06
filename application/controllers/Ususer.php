@@ -10,15 +10,15 @@ class Ususer extends MY_Controller {
   }
 
   public function index(){
-        $this->authenticate();
-        $data['admin'] = $this->session->userdata('dinas');
+        $this->authenticateAdmin();
+        $data['admin'] = $this->session->userdata('admin');
         $data['ususer'] = Ususer_model::all();
         $this->view('admin.dinas.us_user.index',$data);
   }
 
   public function create(){
-        $this->authenticate();
-        $data['admin'] = $this->session->userdata('dinas');
+        $this->authenticateAdmin();
+        $data['admin'] = $this->session->userdata('admin');
         $this->view('admin.dinas.us_user.create',$data);
   }
 
@@ -48,8 +48,8 @@ class Ususer extends MY_Controller {
   }
 
   public function edit($id= NULL){
-    $this->authenticate();
-    $data['admin'] = $this->session->userdata('dinas');
+    $this->authenticateAdmin();
+    $data['admin'] = $this->session->userdata('admin');
     $data['ususer'] = Ususer_model::find($id);
     $this->view('admin.dinas.us_user.edit',$data);
   }

@@ -14,8 +14,6 @@ class Berkas extends MY_Controller {
 
           if($cek == TRUE ){
             echo 'Sudah Submit Berkas';
-          }else if($cek == NULL){
-            echo 'Anda belum mengajukan pkl';
           }else{
             $this->view('user.pengajuan.index',$data);
           }
