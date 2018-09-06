@@ -133,6 +133,13 @@ class MY_Controller extends CI_Controller {
       }
   }
 
+  protected function authenticateAdmin(){
+    if($this->session->userdata('admin')){
+    }else if(is_null($this->session->userdata('admin'))){
+      redirect(base_url('admin/login'));
+    }
+  }
+
   protected function authenticate(){
     if($this->session->userdata('dinas')){
     }else if(is_null($this->session->userdata('dinas'))){

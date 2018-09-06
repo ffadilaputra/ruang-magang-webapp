@@ -8,17 +8,17 @@ class Admin extends MY_Controller {
     parent::__construct();
     $this->load->model('Admin_model');
     $this->load->model('Login_model');
-    $this->authenticate();
+    //$this->authenticateAdmin();
   }
 
   public function index(){
-        $data['admin'] = $this->session->userdata('dinas');
+        $data['admin'] = $this->session->userdata('admin');
         $data['Admin'] = Admin_model::all();
         $this->view('admin.dinas.us_admin.index',$data);
   }
 
   public function create(){
-        $data['admin'] = $this->session->userdata('dinas');
+        $data['admin'] = $this->session->userdata('admin');
         $this->view('admin.dinas.us_admin.create',$data);
   }
 
@@ -35,7 +35,7 @@ class Admin extends MY_Controller {
   }
 
   public function edit($id= NULL){
-    $data['admin'] = $this->session->userdata('dinas');
+    $data['admin'] = $this->session->userdata('admin');
     $data['Admin'] = Admin_model::find($id);
     $this->view('admin.dinas.us_admin.edit',$data);
   }

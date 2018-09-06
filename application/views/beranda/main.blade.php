@@ -7,10 +7,10 @@
     <!--header-->
     <header>
     <div class="banner row" id="banner">
-        <div class="parallax text-center" style="background-image: url(assets/ruang-magang-website/img/among-tani.jpg);">
+    <div class="parallax text-center" style="background-image: url({{ base_url('assets/ruang-magang-website/img/among-tani.jpg') }});">
             <div class="parallax-pattern-overlay">
                 <div class="container text-center" style="height:600px;padding-top:170px;">
-                    <a href="#"><img id="site-title" class=" wow fadeInDown" wow-data-delay="0.0s" wow-data-duration="0.9s" src="<?php base_url(); ?>assets/ruang-magang-website/img/logo-kota.png" alt="logo"/></a>
+                    <a href="#"><img id="site-title" class=" wow fadeInDown" wow-data-delay="0.0s" wow-data-duration="0.9s" src="{{ base_url('assets/ruang-magang-website/img/logo-kota.png') }}" alt="logo"/></a>
 
                     <h4 class="intro wow zoomIn" wow-data-delay="0.4s" wow-data-duration="0.9s" style="font-family: 'PT Sans Narrow', sans-serif;">Ruang magang</h4>
                     <h2 class="intro wow zoomIn" wow-data-delay="0.4s" wow-data-duration="0.9s" style="font-family: 'PT Sans Narrow', sans-serif;">Pemerintah Kota Wisata Batu</h2>
@@ -50,9 +50,9 @@
     <section class="aboutus" id="aboutus">
     <div class="container">
         <div class="heading text-center">
-            <img class="dividerline" src="<?php echo base_url(); ?>assets/ruang-magang-website/img/sep.png" alt="">
+            <img class="dividerline" src="{{ base_url('assets/ruang-magang-website/img/sep.png') }}" alt="">
             <h2 style="font-family: 'Roboto', sans-serif;">Ruang Magang</h2>
-            <img class="dividerline" src="<?php echo base_url(); ?>assets/ruang-magang-website/img/sep.png" alt="">
+            <img class="dividerline" src="{{ base_url('assets/ruang-magang-website/img/sep.png') }}" alt="">
             <h3 style="font-family: 'Roboto', sans-serif;">Ruang Magang adalah salah satu aplikasi untuk magang di lingkungan dinas pemerintah kota batu, terbuka untuk Pelajar SMK atau Mahasiswa </h3>
         </div>
         <div class="container w960">

@@ -40,7 +40,7 @@
 			<ul class="nav">
 				<li class="nav-item active">
 					<a href="#">
-            <i class="icon ion-md-clipboard"></i>
+            <i class="flaticon-home"></i>
 						<p>Dashboard</p>
 					</a>
 				</li>
@@ -52,7 +52,7 @@
 				</li>
 				<li class="nav-item">
 					<a data-toggle="collapse" href="#base">
-              <i class="icon ion-logo-buffer"></i>
+              <i class="flaticon-web"></i>
 						<p>Dinas</p>
 						<span class="caret"></span>
 					</a>
@@ -74,7 +74,7 @@
 
 				<li class="nav-item">
 					<a data-toggle="collapse" href="#baseuser">
-              <i class="icon ion-logo-buffer"></i>
+              <i class="flaticon-users"></i>
 						<p>User</p>
 						<span class="caret"></span>
 					</a>
@@ -98,7 +98,13 @@
 							</li>
 						</ul>
 					</div>
-				</li>
+        </li>
+        <li class="nav-item">
+          <a href="{{ base_url('pengajuan') }}">
+              <i class="flaticon-agenda-1"></i>
+              <p>Pengaju</p>
+            </a>
+          </li>
 			</ul>
 		</div>
 	</div>

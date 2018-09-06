@@ -9,20 +9,23 @@ class Pengajuan extends MY_Controller {
     parent::__construct();
     $this->load->model('Pengaju_model');
     $this->load->model('Pengajuan_model');
-    $this->authenticateUser();
+    $this->authenticateAdmin();
   }
 
   public function index(){
+        $data['admin'] = $this->session->userdata('admin');
         $data['pengajuan_pkl'] = Pengajuan_model::all();
         $this->view('admin.pengajuan_pkl.index',$data);
   }
 
   public function show(){
-        $this->view('admin.pengajuan_pkl.show');
+        $data['admin'] = $this->session->userdata('admin');
+        $this->view('admin.pengajuan_pkl.show',$data);
   }
 
   public function create(){
-        $this->view('admin.pengajuan_pkl.create');
+        $data['admin'] = $this->session->userdata('admin');
+        $this->view('admin.pengajuan_pkl.create',$data);
   }
 
   public function store(){
@@ -38,11 +41,13 @@ class Pengajuan extends MY_Controller {
   }
 
   public function edit($id){
+    $data['admin'] = $this->session->userdata('admin');
     $data['pengajuan_pkl'] = Pengajuan_model::find($id);
     $this->view('admin.pengajuan_pkl.edit',$data);
   }
 
   public function detail($id){
+    $data['admin'] = $this->session->userdata('admin');
     $data['pengajuan_pkl'] = Pengajuan_model::find($id);
     $this->view('admin.pengajuan_pkl.show',$data);
   }
