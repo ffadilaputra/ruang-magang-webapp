@@ -1,4 +1,4 @@
-@extends('admin.template')
+@extends('dinas.template')
 
 @section('content')
     <div class="content">
@@ -39,16 +39,11 @@
                         @endif</td>
                         @if($data->status_kesbangpol == 0 || $data->status_dinas == 0)
                         <td>
-                          @if($data->status_kesbangpol != 1)
-                            <a href="{{ base_url('pengajuan/verifKesbangpol/'.$data->id_pengajuan) }}" class="btn btn-success"><i class="flaticon-success"></i>&nbsp;Kesbangpol</a>
-                          @else
-                            <a href="{{ base_url('pengajuan/verifKesbangpol/'.$data->id_pengajuan) }}" class="disabled btn btn-success"><i class="flaticon-success"></i>&nbsp;Terverifikasi</a>
-                          @endif
-                          {{-- @if($data->status_dinas != 1)
+                          @if($data->status_dinas != 1)
                             <a href="{{ base_url('pengajuan/verifDinas/'.$data->id_pengajuan) }}" class="btn btn-primary"><i class="icon ion-md-checkmark">&nbsp;Dinas</i></a>
                           @else
                             <a href="{{ base_url('pengajuan/verifDinas/'.$data->id_pengajuan) }}" class="btn btn-primary disabled"><i class="icon ion-md-checkmark">&nbsp;Terverifikasi</i></>
-                          @endif --}}
+                          @endif
                         </td>
                         @else()
                         <td>
@@ -56,9 +51,7 @@
                         </td>
                         @endif
                         <td>
-                          <a href="{{ base_url('pengajuan/detail/'.$data->id_pengajuan)}}" class="btn btn-primary"><i class="flaticon-interface"></i></a>
-                          <a href="{{ base_url('pengajuan/delete/'.$data->id_pengajuan)}}" class="btn btn-danger"><i class="flaticon-error"></i></a>
-                        </td>
+                          <a href="{{ base_url('dinas/show/'.$data->id_pengajuan)}}" class="btn btn-primary"><i class="flaticon-interface"></i></a>
                     </tr>
                     @endforeach
                 </tbody>

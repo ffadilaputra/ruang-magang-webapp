@@ -14,13 +14,13 @@ class Subdinas extends MY_Controller {
   public function index(){
         $data['admin'] = $this->session->userdata('dinas');
         $data['subdinas'] = Subdinas_model::all();
-        $this->view('admin.dinas.subdinas.index',$data);
+        $this->view('dinas.subdinas.index',$data);
   }
 
   public function create(){
         $data['admin'] = $this->session->userdata('dinas');
         $data['dinas'] = Dinas_model::all();
-        $this->view('admin.dinas.subdinas.create',$data);
+        $this->view('dinas.subdinas.create',$data);
   }
 
   public function store(){
@@ -38,7 +38,7 @@ class Subdinas extends MY_Controller {
   public function edit($id= NULL){
     $data['admin'] = $this->session->userdata('dinas');
     $data['subdinas'] = Subdinas_model::find($id);
-    $this->view('admin.dinas.subdinas.edit',$data);
+    $this->view('dinas.subdinas.edit',$data);
   }
 
   public function update($id){

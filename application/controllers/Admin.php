@@ -11,13 +11,21 @@ class Admin extends MY_Controller {
     //$this->authenticateAdmin();
   }
 
+  public function dashboard(){
+      $this->authenticateAdmin();
+      $data['admin'] = $this->session->userdata('admin');
+      $this->view('admin.dashboard.index',$data);
+  }
+
   public function index(){
+        $this->authenticateAdmin();
         $data['admin'] = $this->session->userdata('admin');
         $data['Admin'] = Admin_model::all();
         $this->view('admin.dinas.us_admin.index',$data);
   }
 
   public function create(){
+        $this->authenticateAdmin();
         $data['admin'] = $this->session->userdata('admin');
         $this->view('admin.dinas.us_admin.create',$data);
   }
@@ -35,6 +43,7 @@ class Admin extends MY_Controller {
   }
 
   public function edit($id= NULL){
+    $this->authenticateAdmin();
     $data['admin'] = $this->session->userdata('admin');
     $data['Admin'] = Admin_model::find($id);
     $this->view('admin.dinas.us_admin.edit',$data);

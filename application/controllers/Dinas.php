@@ -10,17 +10,23 @@ class Dinas extends MY_Controller {
     $this->load->model('Login_model');
   }
 
+  public function dashboard(){
+    $this->authenticate();
+    $data['admin'] = $this->session->userdata('dinas');
+    $this->view('dinas.dashboard.index',$data);
+  }
+
   public function index(){
         $this->authenticate();
         $data['admin'] = $this->session->userdata('dinas');
         $data['dinas'] = Dinas_model::all();
-        $this->view('admin.dinas.index',$data);
+        $this->view('dinas.index',$data);
   }
 
   public function create(){
         $this->authenticate();
         $data['admin'] = $this->session->userdata('dinas');
-        $this->view('admin.dinas.create',$data);
+        $this->view('dinas.create',$data);
   }
 
   public function store(){
@@ -37,7 +43,7 @@ class Dinas extends MY_Controller {
     $this->authenticate();
     $data['admin'] = $this->session->userdata('logged_in');
     $data['dinas'] = Dinas_model::find($id);
-    $this->view('admin.dinas.edit',$data);
+    $this->view('dinas.edit',$data);
   }
 
   public function update($id){
@@ -91,4 +97,23 @@ class Dinas extends MY_Controller {
       $this->session->sess_destroy();
       redirect('beranda','refresh');
   }
+
+    public function pengaju(){
+      $this->authenticate();
+      $this->load->model('Pengajuan_model');
+      $this->load->model('Pengaju_model');
+      $data['admin'] = $this->session->userdata('dinas');
+      $data['pengajuan_pkl'] = Pengajuan_model::all();
+      $this->view('dinas.pengajuan.index',$data);
+    }
+
+    public function show($id){
+      $this->authenticate();
+      $this->load->model('Pengajuan_model');
+      $this->load->model('Pengaju_model');
+      $data['admin'] = $this->session->userdata('dinas');
+      $data['pengajuan_pkl'] = Pengajuan_model::find($id);
+      $this->view('dinas.pengajuan.show',$data);
+    }
+
 }

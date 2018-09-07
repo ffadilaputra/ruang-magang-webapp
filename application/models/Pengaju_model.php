@@ -10,8 +10,8 @@ class Pengaju_model extends Eloquent {
   protected $fillable   = ['id_user','nama_pengaju','asal_instansi','jml_pengaju','dinas_tujuan','sub_dinas_tujuan'];
   public $timestamps = false;
 
-  public function pengaju(){
-    return $this->hashMany('Pengajuan_model','id_pengaju');
-  }
+  // public function pengaju(){
+  //   return $this->hashMany('Pengajuan_model','id_pengaju');
+  // }
 }
 ?>

@@ -9,10 +9,10 @@
             </a>
             <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">
-                <i class="la la-bars"></i>
+                <i class="flaticon-bars-2"></i>
             </span>
             </button>
-            <button class="topbar-toggler more"><i class="la la-ellipsis-v"></i></button>
+            <button class="topbar-toggler more"><i class="flaticon-bars-2"></i></button>
         </div>
 
         <nav class="navbar navbar-header navbar-expand-lg" data-background-color="blue">

@@ -1,4 +1,4 @@
-@extends('admin.template')
+@extends('dinas.template')
 
 @section('content')
     <div class="content">
@@ -10,7 +10,7 @@
           <div class="col-lg-12">
           <div class="form-group">
               <a href="{{ base_url('subdinas/create') }}" class="btn btn-primary">
-                <i class="icon ion-md-add-circle"></i>
+                <i class="flaticon-add"></i>
               Sub Dinas</a>
           </div>
           <div class="card">
@@ -34,8 +34,8 @@
                           <td>{{ $data->nama_sub_bidang }}</td>
                            <td>{{ $data->kuota }}</td>
                         <td>
-                          <a href="{{ base_url('subdinas/edit/'.$data->id_sub_bidang) }}" class="btn btn-success"><i class="icon ion-md-create"></i></a>
-                          <a href="{{ base_url('subdinas/delete/'.$data->id_sub_bidang)}}" class="btn btn-danger"><i class="icon ion-md-trash"></i></a>
+                          <a href="{{ base_url('subdinas/edit/'.$data->id_sub_bidang) }}" class="btn btn-success"><i class="flaticon-pencil"></i></a>
+                          <a href="{{ base_url('subdinas/delete/'.$data->id_sub_bidang)}}" class="btn btn-danger"><i class="flaticon-interface-5"></i></a>
                         </td>
                     </tr>
                     @endforeach

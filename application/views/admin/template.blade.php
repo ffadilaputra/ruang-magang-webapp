@@ -5,7 +5,6 @@
         <link rel="stylesheet" type="text/css" href="<?= base_url('assets/backend/css/demo.css') ?>">
         <link rel="stylesheet" type="text/css" href="<?= base_url('assets/backend/css/fonts.css') ?>">
         <link rel="stylesheet" type="text/css" href="<?= base_url('assets/backend/css/ready.min.css') ?>">
-        <link href="https://unpkg.com/ionicons@4.3.0/dist/css/ionicons.min.css" rel="stylesheet">
     </head>
     <body>
         <div class="wrapper">

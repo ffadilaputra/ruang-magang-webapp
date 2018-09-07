@@ -7,13 +7,14 @@
         <link rel="stylesheet" type="text/css" href="<?= base_url('assets/backend/css/ready.min.css') ?>">
     </head>
     <body>
-            @include('admin.header')
-            @include('admin.sidebar')
-            <div class="wrapper">
-                @yield('content')
-            </div>
+        <div class="wrapper">
+        @include('dinas.partials.header')
+        @include('dinas.partials.sidebar')
+          <div class="main-panel">
+              @yield('content')
+              @include('dinas.partials.footer')
+          </div>
         </div>
-
     <!--   Core JS Files   -->
     <script src="<?= base_url() ?>assets/backend/js/core/jquery.3.2.1.min.js"></script>
     <script src="<?= base_url() ?>assets/backend/js/core/popper.min.js"></script>
@@ -60,5 +61,8 @@
     <script src="<?= base_url() ?>assets/backend/js/plugin/sweetalert/sweetalert.min.js"></script>
     <!-- Ready Pro JS -->
     <script src="<?= base_url() ?>assets/backend/js/ready.min.js"></script>
-    </body>
+    <!-- Ready Pro DEMO methods, don't include it in your project! -->
+    <script src="<?= base_url() ?>assets/backend/js/setting-demo.js"></script>
+    <script src="<?= base_url() ?>assets/backend/js/demo.js"></script>
+     </body>
 </html>
