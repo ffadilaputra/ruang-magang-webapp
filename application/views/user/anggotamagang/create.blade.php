@@ -3,16 +3,13 @@
 @section('content')
     <div class="content">
       <div class="container-fluid">
-        <div class="page-header">
-          <h4 class="page-title">Halaman Anggota Magang</h4>
-        </div>
         <div class="row">
           <div class="col-sm-8">
               <div class="card">
                   <div class="card-header">
                     <div class="card-title">Form Anggota Magang</div>
                   </div>
-                  <form action="{{ base_url('anggotamagang/store') }}" method="post" enctype="multipart/form-data">
+                  <?= form_open('anggota/store') ?>
                   <div class="card-body">
                     <div class="form-group">
                       <label for="dinas">Nim Anggota</label>
@@ -24,27 +21,16 @@
                     </div>
                     <div class="form-group">
                       <label for="dinas">Nama</label>
-                      <input name="nama" type="text" class="form-control" placeholder="Masukkan nama anggota">
+                      <input name="nama_anggota" type="text" class="form-control" placeholder="Masukkan nama anggota">
                       {{-- Validasi Field --}}
-                      @if($errors->has('nama'))
-                        <small class="text-danger">{{ $errors->first('nama') }}</small>
+                      @if($errors->has('nama_anggota'))
+                        <small class="text-danger">{{ $errors->first('nama_anggota') }}</small>
                       @endif
                     </div>
-
-                    <div class="form-group">
-                      <label for="dinas">Universitas</label>
-                      <input name="universitas" type="text" class="form-control" placeholder="Masukkan Nama Universitas">
-                      {{-- Validasi Field --}}
-                      @if($errors->has('universitas'))
-                        <small class="text-danger">{{ $errors->first('universitas') }}</small>
-                      @endif
-                    </div>
-
-
                   </div>
                   <div class="card-action">
-                    <button class="btn btn-success">Submit</button>
-                    <button class="btn btn-danger">Cancel</button>
+                    <input type="submit" class="btn btn-success">
+                    <input type="reset" class="btn btn-danger">
                   </div>
                   </form>
                 </div>

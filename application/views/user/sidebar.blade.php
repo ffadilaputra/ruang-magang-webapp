@@ -40,31 +40,31 @@
         <ul class="nav">
           <li class="nav-item active">
           <a href="{{ base_url('pengaju') }}">
-              <i class="icon ion-md-clipboard"></i>
+              <i class="flaticon-home"></i>
               <p>Dashboard</p>
             </a>
           </li>
           <li class="nav-section">
             <span class="sidebar-mini-icon">
-              <i class="la la-ellipsis-h"></i>
+              <i class="flaticon-desk"></i>
             </span>
             <h4 class="text-section">Menu</h4>
           </li>
           <li class="nav-item">
             <a href="<?= base_url('pengaju/create') ?>">
-              <i class="icon ion-md-calendar"></i>
+              <i class="flaticon-desk"></i>
               <p>Pengajuan</p>
             </a>
           </li>
           <li class="nav-item">
             <a href="<?= base_url('anggota') ?> ">
-              <i class="icon ion-md-calendar"></i>
+              <i class="flaticon-user-2"></i>
               <p>Anggota</p>
             </a>
           </li>
           <li class="nav-item">
             <a href="<?= base_url('berkas') ?>">
-              <i class="icon ion-md-calendar"></i>
+              <i class="flaticon-file-1"></i>
               <p>Berkas</p>
             </a>
           </li>

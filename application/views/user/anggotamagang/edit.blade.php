@@ -3,23 +3,21 @@
 @section('content')
     <div class="content">
       <div class="container-fluid">
-        <div class="page-header">
-          <h4 class="page-title">Halaman Anggota Magang</h4>
-        </div>
+
         <div class="row">
           <div class="col-sm-8">
               <div class="card">
                   <div class="card-header">
                     <div class="card-title">Form Anggota Magang</div>
                   </div>
-                  <form action="{{ base_url('anggotamagang/update/'.$anggotamagang->id_anggota) }}" method="POST" enctype="multipart/form-data">
-                  <div class="card-body">
+                   <?= form_open('anggota/update/'.$anggotamagang->id_anggota) ?>
+                    <div class="card-body">
                     <div class="form-group">
                       <label for="dinas">Nama Anggota</label>
-                      <input value="{{ $anggotamagang->nama }}" name="nama" type="text" class="form-control" placeholder="Nama Dinas">
+                      <input value="{{ $anggotamagang->nama_anggota }}" name="nama_anggota" type="text" class="form-control" placeholder="Nama Anggota">
                       {{-- Validasi Field --}}
-                      @if($errors->has('nama'))
-                        <small class="text-danger">{{ $errors->first('nama') }}</small>
+                      @if($errors->has('nama_anggota'))
+                        <small class="text-danger">{{ $errors->first('nama_anggota') }}</small>
                       @endif
                     </div>
 
@@ -31,16 +29,6 @@
                         <small class="text-danger">{{ $errors->first('nim') }}</small>
                       @endif
                     </div>
-
-                    <div class="form-group">
-                      <label for="dinas">Universitas</label>
-                      <input value="{{ $anggotamagang->universitas }}" name="universitas" type="text" class="form-control" placeholder="Nama Dinas">
-                      {{-- Validasi Field --}}
-                      @if($errors->has('universitas'))
-                        <small class="text-danger">{{ $errors->first('universitas') }}</small>
-                      @endif
-                    </div>
-
 
                   </div>
                   <div class="card-action">
