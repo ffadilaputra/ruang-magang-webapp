@@ -23,13 +23,13 @@ class Anggota extends MY_Controller {
   }
 
   public function store(){
+    $data['user'] = $this->session->userdata('logged_in');
     //validasi form
     $this->validate($this->input->post(), [
       'nim' => 'required|string',
-      'nama' => 'required|string',
+      'nama_anggota' => 'required|string',
     ]);
     //Proses Input
-    $data['user'] = $this->session->userdata('logged_in');
     $_POST['fk_user'] = $data['user']['id_user'];
     Anggota_Model::create($this->input->post());
     redirect('anggota');
