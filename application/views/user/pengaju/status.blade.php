@@ -18,7 +18,7 @@
                       @if($status->status_kesbangpol == 1)
                         <span class="badge badge-count badge-success">Terverifikasi</span>
                       @else
-                      <span class="badge badge-count badge-danger">Belum Terverifikasi</span>
+                        <span class="badge badge-count badge-danger">Belum Terverifikasi</span>
                       @endif
                     </div>
                   </div>
