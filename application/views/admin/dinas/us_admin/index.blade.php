@@ -10,7 +10,7 @@
           <div class="col-lg-12">
           <div class="form-group">
               <a href="{{ base_url('Admin/create') }}" class="btn btn-primary">
-                <i class="icon ion-md-add-circle"></i>
+                <i class="flaticon-add-user"></i>
               Admin</a>
           </div>
           <div class="card">
@@ -18,7 +18,7 @@
             <table id="table" class="table table-striped">
                 <thead>
                     <tr>
-                        <th>Id Admin</th>
+                        <th>No</th>
                          <th>Username</th>
                          <th>Email</th>
                         <th>Opsi</th>
@@ -29,12 +29,11 @@
                     @foreach($Admin as $data)
                     <tr>
                         <td>{{ $no++ }}</td>
-                         <td>{{ $data->nama }}</td>
-                          <td>{{ $data->email }}</td>
-
+                        <td>{{ $data->nama }}</td>
+                        <td>{{ $data->email }}</td>
                         <td>
-                          <a href="{{ base_url('Admin/edit/'.$data->id_admin) }}" class="btn btn-success"><i class="icon ion-md-create"></i></a>
-                          <a href="{{ base_url('Admin/delete/'.$data->id_admin)}}" class="btn btn-danger"><i class="icon ion-md-trash"></i></a>
+                          <a href="{{ base_url('Admin/edit/'.$data->id_admin) }}" class="btn btn-success"><i class="flaticon-pencil"></i></a>
+                          <a href="{{ base_url('Admin/delete/'.$data->id_admin)}}" class="btn btn-danger"><i class="flaticon-cross"></i></a>
                         </td>
                     </tr>
                     @endforeach

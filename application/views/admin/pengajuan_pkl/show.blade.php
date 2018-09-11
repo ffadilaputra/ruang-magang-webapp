@@ -14,8 +14,7 @@
                 </div>
               </div>
               <div class="invoice-desc">
-                Bandung, West Java, Indonesia<br>
-                Fax 621113
+                  Jl. Panglima Sudirman No.507, Pesanggrahan, Kec. Batu, Kota Batu, Jawa Timur 65313
               </div>
             </div>
             <div class="card-body">

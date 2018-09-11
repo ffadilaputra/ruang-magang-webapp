@@ -382,7 +382,7 @@ Ditunjang Oleh Pendidikan Yang Tepatguna dan Berdaya Saing Ditopang  Sumberdaya 
           <img class="dividerline" src="<?= base_url(); ?>assets/ruang-magang-website/img/sep.png" alt="">
           <h3 style="font-family: 'Roboto', sans-serif;">Login User , Login Bangkesbangpol , Login Dinas</h3>
       </div>
-  
+
      <div class="row">
           <div class="col-md-12">
               <div class="papers text-center">
@@ -391,7 +391,7 @@ Ditunjang Oleh Pendidikan Yang Tepatguna dan Berdaya Saing Ditopang  Sumberdaya 
         <form method="post" action="contact.php" id="contactform">
         <input name="name" type="text" class="contact col-md-6" placeholder="Your Name *" >
         <input name="email" type="password" class="contact noMarr col-md-6" placeholder="Password *" >
-  
+
         <input type="submit" id="submit" class="contact submit" value="Login">
         </form>
               </div>
@@ -413,24 +413,24 @@ Ditunjang Oleh Pendidikan Yang Tepatguna dan Berdaya Saing Ditopang  Sumberdaya 
     </div>
      <div class="container w960">
       <div class="row">
-        
+
         <?= form_open('saran/create') ?>
-          <input name="nama" type="text" class="contact col-md-6" placeholder="Your Name *" >
+          <input name="nama" type="text" class="contact col-md-6" placeholder="Your Name *" required>
            {{-- Validasi Field --}}
                       @if($errors->has('nama'))
                         <small class="text-danger">{{ $errors->first('nama') }}</small>
                       @endif
-          <input name="email" type="email" class="contact noMarr col-md-6" placeholder="E-mail address *" >
+          <input name="email" type="email" class="contact noMarr col-md-6" placeholder="E-mail address *" required>
             {{-- Validasi Field --}}
                       @if($errors->has('email'))
                         <small class="text-danger">{{ $errors->first('email') }}</small>
                       @endif
-          <textarea name="keterangan" class="contact col-md-12" placeholder="Message *"></textarea>
+          <textarea name="keterangan" class="contact col-md-12" placeholder="Message *" required></textarea>
           {{-- Validasi Field --}}
                       @if($errors->has('keterangan'))
                         <small class="text-danger">{{ $errors->first('keterangan') }}</small>
-                      @endif  
-            
+                      @endif
+
           <button class="btn btn-primary">Send Message</button>
 
         </form>

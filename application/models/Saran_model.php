@@ -9,7 +9,7 @@ class Saran_model extends Eloquent {
   protected $primaryKey = 'id_saran';
   protected $fillable   = ['nama','email','keterangan'];
 
-  public $timestamps = false;
+  public $timestamps = TRUE;
 
 }
 ?>

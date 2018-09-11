@@ -105,6 +105,12 @@
               <p>Verifikasi Magang</p>
             </a>
           </li>
+          <li class="nav-item">
+            <a href="{{ base_url('saran') }}">
+                <i class="flaticon-box"></i>
+                <p>Kotak Saran</p>
+              </a>
+            </li>
 			</ul>
 		</div>
 	</div>
