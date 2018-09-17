@@ -97,7 +97,7 @@
                                     <div class="u-img"><img src="<?= base_url() ?>/assets/backend/img/profile.jpg" alt="image profile"></div>
                                     <div class="u-text">
                                         <h4>{{ $user['nama'] }}</h4>
-                                        <p class="text-muted">{{ $user['email'] }}</p><a href="index.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a>
+                                        <p class="text-muted">{{ $user['email'] }}</p><a href="<?= base_url('user/profile') ?>" class="btn btn-rounded btn-danger btn-sm">Edit Profile</a>
                                     </div>
                                 </div>
                             </li>

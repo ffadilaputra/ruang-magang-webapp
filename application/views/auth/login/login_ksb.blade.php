@@ -38,10 +38,6 @@
         <div class="form-action">
           <input type="submit" class="btn btn-primary btn-rounded btn-login" value="Sign In">
         </div>
-        <div class="login-account">
-          <span class="msg">Don't have an account yet ?</span>
-          <a href="#" id="show-signup" class="link">Sign Up</a>
-        </div>
       </div>
       <?= form_close() ?>
     </div>

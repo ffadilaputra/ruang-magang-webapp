@@ -75,7 +75,7 @@
 				<li class="nav-item">
 					<a data-toggle="collapse" href="#baseuser">
               <i class="flaticon-users"></i>
-						<p>Pengguna</p>
+						<p>Akun</p>
 						<span class="caret"></span>
 					</a>
 					<div class="collapse" id="baseuser">
@@ -87,13 +87,13 @@
 							</li>
 							<li>
 								<a href="{{base_url('Usdinas')}}">
-									<span class="sub-item">Pengaju</span>
+									<span class="sub-item">Dinas</span>
 								</a>
 							</li>
 
 							<li>
 								<a href="{{base_url('ususer')}}">
-									<span class="sub-item">User</span>
+									<span class="sub-item">Pengaju</span>
 								</a>
 							</li>
 						</ul>
