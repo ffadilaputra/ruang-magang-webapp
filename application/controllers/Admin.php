@@ -8,13 +8,29 @@ class Admin extends MY_Controller {
     parent::__construct();
     $this->load->model('Admin_model');
     $this->load->model('Login_model');
-    //$this->authenticateAdmin();
   }
 
   public function dashboard(){
       $this->authenticateAdmin();
       $data['admin'] = $this->session->userdata('admin');
       $this->view('admin.dashboard.index',$data);
+  }
+
+  public function profile(){
+    $this->authenticateAdmin();
+    $this->load->model('Admin_model');
+    $data['admin'] = $this->session->userdata('admin');
+    $data['profil'] = Admin_model::find($data['admin']['id_admin']);
+    // /var_dump($data['admin']);
+    $this->view('admin.dashboard.profil',$data);
+  }
+
+  public function update_admin($id){
+    $this->load->model('Admin_model');
+    $data['admin'] = $this->session->userdata('admin');
+    $_POST['password'] = md5($_POST['password']);
+    Admin_model::find($id)->update($this->input->post());
+    redirect('admin/dashboard');
   }
 
   public function index(){
@@ -84,7 +100,7 @@ class Admin extends MY_Controller {
 		if ($result) {
 			foreach ($result as $row) {
 				$sess = array(
-					'id_admin' => $row->id_user,
+					'id_admin' => $row->id_admin,
 					'nama' => $row->nama,
 					'email' => $row->email,
 				 );

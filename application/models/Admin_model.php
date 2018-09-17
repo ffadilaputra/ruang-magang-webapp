@@ -7,7 +7,7 @@ class Admin_Model extends Eloquent {
 
   protected $table      = 'us_admin';
   protected $primaryKey = 'id_admin';
-  protected $fillable   = ['nama','password','email','id_admin'];
+  protected $fillable   = ['nama','password','email'];
 
   public $timestamps = false;
 

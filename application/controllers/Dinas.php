@@ -16,6 +16,22 @@ class Dinas extends MY_Controller {
     $this->view('dinas.dashboard.index',$data);
   }
 
+  public function profile(){
+    $this->authenticate();
+    $this->load->model('Usdinas_model');
+    $data['admin'] = $this->session->userdata('dinas');
+    $data['profil'] = Usdinas_model::find($data['admin']['id_admin']);
+    $this->view('dinas.dashboard.profile',$data);
+  }
+
+  public function update_dinas($id){
+    $this->load->model('Usdinas_model');
+    $data['user'] = $this->session->userdata('dinas');
+    $_POST['password'] = md5($_POST['password']);
+    Usdinas_model::find($id)->update($this->input->post());
+    redirect('dinas/dashboard');
+  }
+
   public function index(){
         $this->authenticate();
         $data['admin'] = $this->session->userdata('dinas');

@@ -15,14 +15,12 @@
                   </div>
 									<div class="timeline-panel">
 										<div class="timeline-heading">
-											<h4 class="timeline-title">Verifikasi Berkas</h4>
-											<p><small class="text-muted">11 hours ago via Twitter</small></p>
-										</div>
+											<h4 class="timeline-title">Ajukan data anda</h4>
+											</div>
 										<div class="timeline-body">
-                      <p>Status verifikasi berkas anda .</p>
+                      <p>Ajukan data pengajuan magang anda dengan cara diwakilkan oleh ketua kelompok, dengan cara melakukan klik pada link dibawah</p>
                       <ul>
-                        <li>X</li>
-                        <li>X</li>
+                        <li><a href="{{ base_url('pengaju/create') }}">Pengajuan</a></li>
                       </ul>
                     </div>
                     <hr>
@@ -32,37 +30,26 @@
 								<li class="timeline-inverted">
 									<div class="timeline-panel">
 										<div class="timeline-heading">
-											<h4 class="timeline-title">Ajukan</h4>
+											<h4 class="timeline-title">Verifikasi Berkas</h4>
 										</div>
 										<div class="timeline-body">
-											<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+											<p>Lakukan submit berkas kemudian kumpulkan berkas melalui admin kesbangpol di kantor dinas.</p>
                     </div>
                     <hr>
-                      <a class="btn btn-primary" href="">TTTT</a>
+                    <a class="btn btn-primary" href="{{ base_url('berkas') }}">Submit Berkas</a>
 									</div>
 								</li>
 								<li>
 									<div class="timeline-badge info"></div>
 									<div class="timeline-panel">
 										<div class="timeline-heading">
-											<h4 class="timeline-title">Mussum ipsum cacilds</h4>
+											<h4 class="timeline-title">Pantau</h4>
 										</div>
 										<div class="timeline-body">
-											<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+											<p>Lakukan pemantauan secara berkas kamu pada tautan dibawah</p>
 											<hr>
 											<div class="btn-group dropdown">
-												<button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
-													<span class="btn-label">
-													</span>
-												</button>
-												<ul class="dropdown-menu" role="menu">
-													<li>
-														<a class="dropdown-item" href="#">Action</a>
-														<a class="dropdown-item" href="#">Another action</a>
-														<div class="dropdown-divider"></div>
-														<a class="dropdown-item" href="#">Something else here</a>
-													</li>
-												</ul>
+                          <a class="btn btn-primary" href="{{ base_url('berkas') }}">Pantau Berkas</a>
 											</div>
 										</div>
 									</div>
@@ -72,10 +59,10 @@
 									<div class="timeline-badge success"></div>
 									<div class="timeline-panel">
 										<div class="timeline-heading">
-											<h4 class="timeline-title">Mussum ipsum cacilds</h4>
+											<h4 class="timeline-title">Magang pun dimulai</h4>
 										</div>
 										<div class="timeline-body">
-											<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+											<p>Setelah semua proses selesai,kamu bisa magang di bidang yang kamu inginkan.</p>
 										</div>
 									</div>
 								</li>

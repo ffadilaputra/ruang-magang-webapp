@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>App</title>
+        <title>Ruang Magang</title>
         <link rel="stylesheet" type="text/css" href="<?= base_url('assets/backend/css/bootstrap.min.css') ?>">
         <link rel="stylesheet" type="text/css" href="<?= base_url('assets/backend/css/demo.css') ?>">
         <link rel="stylesheet" type="text/css" href="<?= base_url('assets/backend/css/fonts.css') ?>">
@@ -16,8 +16,7 @@
             });
           </script>
 
-        <link href="https://unpkg.com/ionicons@4.3.0/dist/css/ionicons.min.css" rel="stylesheet">
-    </head>
+     </head>
     <body>
         <div class="wrapper">
         @include('user.header')
