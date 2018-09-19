@@ -15,6 +15,14 @@
           </div>
           <div class="card">
             <br>
+            @if($hitung_anggota > $batas->jml_pengaju)
+            <div class="form-control">
+              <div class="alert alert-danger" role="alert">
+                Anggota anda melebihi kapasitas
+              </div>
+            </div>
+            @else
+            @endif
             <table id="table" class="table table-striped">
                 <thead>
                     <tr>
@@ -32,8 +40,8 @@
                          <td>{{ $data->nim }}</td>
                           <td>{{ $data->nama_anggota }}</td>
                         <td>
-                          <a href="{{ base_url('anggota/edit/'.$data->id_anggota) }}" class="btn btn-success"><i class="icon ion-md-create"></i></a>
-                          <a href="{{ base_url('anggota/delete/'.$data->id_anggota)}}" class="btn btn-danger"><i class="icon ion-md-trash"></i></a>
+                          <a href="{{ base_url('anggota/edit/'.$data->id_anggota) }}" class="btn btn-success"><i class="flaticon-pencil"></i></a>
+                          <a href="{{ base_url('anggota/delete/'.$data->id_anggota)}}" class="btn btn-danger"><i class="flaticon-cross"></i></a>
                         </td>
                     </tr>
                     @endforeach
