@@ -17,6 +17,8 @@ class Anggota extends MY_Controller {
         $data['hitung_anggota'] = Anggota_model::where('fk_user',$data['user']['id_user'])->count();
         $data['batas'] = Pengaju_model::where('id_user',$data['user']['id_user'])->select('jml_pengaju')->first();
         //var_dump($data['hitung_anggota']);
+
+        $data['a'] = Pengaju_model::where('id_user',$data['user']['id_user'])->first();
         $this->view('user.anggotamagang.index',$data);
   }
 

@@ -15,13 +15,14 @@
           </div>
           <div class="card">
             <br>
+            @if($a == TRUE)
             @if($hitung_anggota > $batas->jml_pengaju)
             <div class="form-control">
               <div class="alert alert-danger" role="alert">
                 Anggota anda melebihi kapasitas
               </div>
             </div>
-            @else
+            @endif
             @endif
             <table id="table" class="table table-striped">
                 <thead>
